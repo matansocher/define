@@ -36,7 +36,8 @@ export const HomeProjects = ({}: Props) => {
         swipeable
       >
         {homeConfig.projects.map((project) => {
-          const { title, numbers, image, imageAlt, additionalTextAboveNumbers, tags } = project;
+          // const { title, numbers, image, imageAlt, additionalTextAboveNumbers, tags } = project;
+          const { title, numbers, image, imageAlt, tags } = project;
           return (
             <div key={title} className="project-item">
               <p className="title">{title}</p>
