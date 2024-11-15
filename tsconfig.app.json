@@ -22,12 +22,12 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
     "paths": {
-      "@assets": ["src/assets"],
-      "@components": ["src/components"],
-      "@core/*": ["src/core/*"],
-      "@interface": ["src/interface"],
-      "@screens": ["src/screens"],
-      "@styles/*": ["src/styles/*"],
+      "@assets": ["./src/assets"],
+      "@components": ["./src/components"],
+      "@core/*": ["./src/core/*"],
+      "@interface": ["./src/interface"],
+      "@screens": ["./src/screens"],
+      "@styles/*": ["./src/styles/*"],
     }
   },
   "include": [
