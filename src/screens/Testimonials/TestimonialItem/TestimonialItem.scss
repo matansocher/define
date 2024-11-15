@@ -1,0 +1,30 @@
+@use '../../../styles/colors' as *;
+
+.testimonial-item {
+  flex: 1 1 calc(50% - 8px); /* Each box takes up half the container width minus half the gap */
+  box-sizing: border-box;
+  height: 100%;
+  padding: 24px;
+  border-radius: 10px;
+  border: 2.5px solid #f8d2f6;
+  .text {
+    color: #dee4ea;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .name {
+    color: #fcf0ff;
+    margin-top: 24px;
+    font-size: 20px;
+  }
+  .title {
+    color: #929599;
+  }
+  .org {
+    color: #929599;
+  }
+  .title, .org {
+    margin-top: 6px;
+    font-size: 16px;
+  }
+}

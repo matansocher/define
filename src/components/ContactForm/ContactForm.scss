@@ -1,0 +1,29 @@
+@use 'src/styles/_colors.scss' as *;
+
+.contact-form {
+  max-width: 700px;
+  margin: 0 auto;
+  .form-element {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 700px;
+    margin-top: 25px;
+    input {
+      width: 100%;
+      background: #292929;
+      border: 1px solid #dee4ea;
+      font-size: 16px;
+      box-sizing: border-box;
+      padding: 0 8px;
+      margin-top: 50px;
+    }
+  }
+  .main-btn {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+
+}

@@ -1,0 +1,216 @@
+@use 'src/styles/_colors.scss' as *;
+
+.home-page {
+  .hero-section {
+    .section-content {
+      padding-bottom: 50px;
+      .title {
+        max-width: 1000px;
+      }
+      .text {
+        font-size: 24px;
+      }
+      .text, .main-btn {
+        margin-top: 40px;
+      }
+    }
+  }
+
+  .logos-section {
+    background: #fcfbfc;
+    padding: 60px 0;
+    .section-content {
+      display: flex;
+      overflow: hidden;
+      white-space: nowrap;
+      .title {
+        color: #151b21;
+      }
+      @keyframes scroll {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+
+      .logo-track {
+        display: flex;
+        align-items: flex-end;
+        gap: 50px;
+        animation: scroll 40s linear infinite;
+      }
+
+      .logo {
+
+      }
+    }
+    &-wrapper {
+      display: flex;
+      margin-top: 50px;
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+
+  .numbers-section {
+    background: #0a060a;
+    .section-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .number-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        .number {
+          font-size: 80px;
+          font-weight: 800;
+          color: #cd59ff;
+        }
+        .text {
+          max-width: 100px;
+          font-size: 22px;
+          font-weight: 300;
+          line-height: 26px;
+          color: #9a9a9e;
+        }
+      }
+    }
+  }
+
+  .solutions-section {
+    background: #202020;
+    .section-content {
+      .solutions-items {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 50px;
+        margin-top: 100px;
+        .solutions-item {
+          max-width: 375px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          gap: 20px;
+          .main-btn {
+            padding: 16px 40px;
+          }
+        }
+      }
+    }
+  }
+
+  .projects-section {
+    background: #303030;
+    .section-content {
+      max-width: 1100px;
+      h2 {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  .services-section {
+    background: #de82ff;
+    .section-content {
+      position: relative;
+      max-width: 820px;
+      h2, h3, p {
+        color: #151B21;
+      }
+      h2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: rotate(90deg);
+        transform-origin: 0 0;
+      }
+      .services-items {
+        max-width: 800px;
+        margin: -50px auto 0;
+        padding-left: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        .services-item {
+          position: relative;
+          padding-left: 50px;
+          p {
+            margin-top: 20px;
+            font-weight: 300;
+            line-height: 26px;
+          }
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .testimonials-section {
+    .section-content {
+      max-width: 1400px;
+      h2 {
+        text-align: center;
+        margin-bottom: 80px;
+      }
+    }
+  }
+
+  .contact-section {
+    background: #0e080d;
+    .section-content {
+
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .home-page {
+
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .home-page {
+    .numbers-section {
+      .section-content {
+        flex-direction: column;
+        gap: 40px;
+        .number-item {
+          flex-direction: column;
+          .text {
+            max-width: unset;
+            text-align: center;
+          }
+        }
+      }
+    }
+    .solutions-section {
+      .section-content {
+        .solutions-items {
+          flex-direction: column;
+          gap: 50px;
+        }
+      }
+    }
+    .services-section {
+      .section-content {
+        width: 80%;
+        padding: 60px 0;
+        h2 {
+          left: 12px !important;
+        }
+      }
+    }
+  }
+}
