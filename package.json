@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "vite",
+    "start": "serve -s dist",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint define",
@@ -21,6 +21,7 @@
     "react-multi-carousel": "^2.8.5",
     "react-router-dom": "^6.28.0",
     "sass": "^1.80.6",
+    "serve": "^14.2.4",
     "vite-tsconfig-paths": "^5.1.1"
   },
   "devDependencies": {
