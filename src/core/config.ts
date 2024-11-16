@@ -1,4 +1,4 @@
-import { ITestimonial } from '../interface/Testimonials.interface.tsx';
+import { ITestimonial } from '../interface/Testimonials.interface';
 
 export const TESTIMONIALS_CONFIG: ITestimonial[] = [
   {
