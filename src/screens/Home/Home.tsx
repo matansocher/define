@@ -1,8 +1,8 @@
 import './Home.scss';
 import { ContactForm } from '@components';
-import { HomeTestimonials } from './HomeTestimonials/HomeTestimonials.tsx';
-import { homeConfig } from './home-config.tsx';
-import { HomeProjects } from './HomeTestimonials/HomeProjects.tsx';
+import { HomeTestimonials } from './HomeTestimonials/HomeTestimonials';
+import { homeConfig } from './home-config';
+import { HomeProjects } from './HomeTestimonials/HomeProjects';
 
 type Props = {}
 

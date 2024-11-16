@@ -1,1 +1,1 @@
-export type { ITestimonial } from './Testimonials.interface.ts';
+export type { ITestimonial } from './Testimonials.interface';
