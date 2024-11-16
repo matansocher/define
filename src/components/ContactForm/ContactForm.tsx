@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { FormEvent, useRef, useState } from 'react';
-import { CONTACT_ENDPOINT, MMPS_BASE_URL } from '@core/config.ts';
-import { getErrorMessage } from '@core/utils.ts';
+import { CONTACT_ENDPOINT, MMPS_BASE_URL } from '@core/config';
+import { getErrorMessage } from '@core/utils';
 import './ContactForm.scss';
 
 type Props = {}
@@ -45,7 +45,6 @@ export const ContactForm = ({}: Props) => {
       console.error(`failed to send form, error: ${getErrorMessage(err)}`);
       setShowErrorText('Oops, something went wrong. Please try again.');
     }
-
   }
 
   return (

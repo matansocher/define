@@ -1,8 +1,8 @@
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import { TESTIMONIALS_CONFIG } from '@core/config.ts';
+import { TESTIMONIALS_CONFIG } from '@core/config';
 import './HomeTestimonials.scss';
-import { carouselConfig } from './carousel-config.tsx';
+import { carouselConfig } from './carousel-config';
 import assets from '@assets';
 
 type Props = {}

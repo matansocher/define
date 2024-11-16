@@ -1,8 +1,8 @@
 import './Testimonials.scss';
 import { ContactForm } from '@components';
 import { ITestimonial } from '@interface';
-import { TestimonialItem } from './TestimonialItem/TestimonialItem.tsx';
-import { TESTIMONIALS_CONFIG } from '@core/config.ts';
+import { TestimonialItem } from './TestimonialItem/TestimonialItem';
+import { TESTIMONIALS_CONFIG } from '@core/config';
 
 type Props = {
 
