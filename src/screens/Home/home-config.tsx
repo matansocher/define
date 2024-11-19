@@ -22,7 +22,6 @@ interface ServiceItem {
 
 interface ProjectItem {
   image: string;
-  imageAlt: string;
   title: string;
   numbers: NumberItem[];
   additionalTextAboveNumbers?: string;
@@ -116,7 +115,6 @@ export const homeConfig: HomeConfig = {
         { number: '12', text: 'months duration' },
       ],
       image: assets.homeProject1,
-      imageAlt: '',
       tags: ['#UXUI', '#Product', '#Research', '#QA'],
     },
     {
@@ -129,7 +127,6 @@ export const homeConfig: HomeConfig = {
         { number: '12', text: 'months duration' },
       ],
       image: assets.homeProject2,
-      imageAlt: '',
       tags: ['#UXUI', '#Product', '#Research', '#QA'],
     },
     {
@@ -142,7 +139,6 @@ export const homeConfig: HomeConfig = {
         { number: '12', text: 'months duration' },
       ],
       image: assets.homeProject3,
-      imageAlt: '',
       tags: ['#UXUI', '#Product', '#Research', '#QA'],
     },
     {
@@ -155,7 +151,6 @@ export const homeConfig: HomeConfig = {
         { number: '12', text: 'months duration' },
       ],
       image: assets.homeProject4,
-      imageAlt: '',
       tags: ['#UXUI', '#Product', '#Research', '#QA'],
     },
     {
@@ -168,7 +163,6 @@ export const homeConfig: HomeConfig = {
         { number: '12', text: 'months duration' },
       ],
       image: assets.homeProject5,
-      imageAlt: '',
       tags: ['#UXUI', '#Product', '#Research', '#QA'],
     },
     {
@@ -181,7 +175,6 @@ export const homeConfig: HomeConfig = {
         { number: '12', text: 'months duration' },
       ],
       image: assets.homeProject6,
-      imageAlt: '',
       tags: ['#UXUI', '#Product', '#Research', '#QA'],
     },
     {
@@ -194,7 +187,6 @@ export const homeConfig: HomeConfig = {
         { number: '12', text: 'months duration' },
       ],
       image: assets.homeProject7,
-      imageAlt: '',
       tags: ['#UXUI', '#Product', '#Research', '#QA'],
     },
     {
@@ -207,7 +199,6 @@ export const homeConfig: HomeConfig = {
         { number: '12', text: 'months duration' },
       ],
       image: assets.homeProject8,
-      imageAlt: '',
       tags: ['#UXUI', '#Product', '#Research', '#QA'],
     },
   ],
@@ -215,11 +206,11 @@ export const homeConfig: HomeConfig = {
     { image: assets.amdocs, alt: 'amdocs logo' },
     { image: assets.beacon, alt: 'beacon logo' },
     { image: assets.brinkslogo, alt: 'brinkslogo logo' },
-    { image: assets.controlp, alt: 'controlp logo' },
+    { image: assets.controlup, alt: 'controlup logo' },
     { image: assets.gool, alt: 'gool logo' },
     { image: assets.hippoCampus, alt: 'hippoCampus logo' },
     { image: assets.lobby, alt: 'lobby logo' },
-    { image: assets.Marketer, alt: 'Marketer logo' },
+    { image: assets.marketer, alt: 'marketer logo' },
     { image: assets.myco, alt: 'myco logo' },
     { image: assets.sheCodes, alt: 'sheCodes logo' },
     { image: assets.sqlink, alt: 'sqlink logo' },

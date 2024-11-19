@@ -3,35 +3,6 @@
 .home-testimonials {
   position: relative;
   padding-bottom: 30px;
-  .testimonial-item {
-    flex: 1 1 30%;
-    flex: none;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    margin: 0 10px;
-    .text {
-      color: #dee4ea;
-      font-size: 16px;
-      line-height: 22px;
-    }
-    .name {
-      font-weight: 600;
-      color: #fcf0ff;
-      margin-top: 24px;
-      font-size: 20px;
-    }
-    .title {
-      color: #929599;
-    }
-    .org {
-      color: #929599;
-    }
-    .title, .org {
-      margin-top: 6px;
-      font-size: 14px;
-    }
-  }
 
   .react-multi-carousel-dot-list {
     gap: 4px;
@@ -48,6 +19,7 @@
       background: #d9d9d9;
     }
   }
+
   .react-multiple-carousel__arrow {
     display: none;
   }

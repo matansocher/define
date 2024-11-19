@@ -9,11 +9,10 @@ type Props = {
 }
 
 export const Testimonials = ({}: Props) => {
-
   const renderTestimonials = () => {
-    return TESTIMONIALS_CONFIG.map((testimonial: ITestimonial) => {
+    return [...TESTIMONIALS_CONFIG].map((testimonial: ITestimonial) => {
       return (
-        <TestimonialItem key={testimonial.key} testimonial={testimonial} />
+        <TestimonialItem key={testimonial.name} testimonial={testimonial} />
       );
     })
   }
@@ -22,7 +21,7 @@ export const Testimonials = ({}: Props) => {
     <div className="page-wrapper testimonials-page">
       <div className="section">
         <div className="section-content">
-          <h1>What People Say:</h1>
+          <h1>What People Say</h1>
           <div className="testimonials-wrapper">
             {renderTestimonials()}
           </div>

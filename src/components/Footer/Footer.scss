@@ -5,7 +5,15 @@ footer {
   align-items: center;
   justify-content: space-between;
   padding: 50px;
-  p {
-    color: #e9d7fe;
+  .footer-left, .footer-right {
+    p {
+      color: #e9d7fe;
+    }
+  }
+  .footer-left {
+
+  }
+  .footer-right {
+
   }
 }

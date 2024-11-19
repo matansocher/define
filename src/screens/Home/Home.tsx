@@ -1,8 +1,9 @@
-import './Home.scss';
+import { Link as ScrollLink } from 'react-scroll';
 import { ContactForm } from '@components';
 import { HomeTestimonials } from './HomeTestimonials/HomeTestimonials';
 import { homeConfig } from './home-config';
 import { HomeProjects } from './HomeTestimonials/HomeProjects';
+import './Home.scss';
 
 type Props = {}
 
@@ -13,7 +14,9 @@ export const Home = ({}: Props) => {
         <div className="section-content">
             <h1 className="title">Define better processes for your organization</h1>
             <p className="text">Make your path to success shorter</p>
-            <button className="main-btn">Let’s talk</button>
+            <ScrollLink to="contact-form" smooth={true} duration={1000}>
+              <button className="main-btn">Let’s talk</button>
+            </ScrollLink>
         </div>
       </div>
 
@@ -54,7 +57,9 @@ export const Home = ({}: Props) => {
                   <img src={solution.image} alt=""/>
                   <h3 className={`title`} style={solution.additionalHeaderStyle || {}}>{solution.title}</h3>
                   <p style={solution.additionalTextStyle || {}}>{solution.text}</p>
-                  <button className="main-btn">Let's Talk</button>
+                  <ScrollLink to="contact-form" smooth={true} duration={1000}>
+                    <button className="main-btn">Let's Talk</button>
+                  </ScrollLink>
                 </div>
               ))}
             </div>

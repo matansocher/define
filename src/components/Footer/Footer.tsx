@@ -10,8 +10,12 @@ export const Footer = ({}: Props) => {
 
   return (
     <footer>
-      <p>{ leftText }</p>
-      <p>{ rightText }</p>
+      <div className="footer-left">
+        <p>{leftText}</p>
+      </div>
+      <div className="footer-right">
+        <p>{rightText}</p>
+      </div>
     </footer>
   );
 }

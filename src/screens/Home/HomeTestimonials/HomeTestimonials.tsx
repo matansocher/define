@@ -4,19 +4,78 @@ import assets from '@assets';
 import { TESTIMONIALS_CONFIG } from '@core/config';
 import { carouselConfig } from './carousel-config';
 import './HomeTestimonials.scss';
+import { ITestimonial } from '@interface';
+import { TestimonialItem } from '../../Testimonials/TestimonialItem/TestimonialItem.tsx';
+import { useEffect, useRef } from 'react';
 
 type Props = {}
 
 export const HomeTestimonials = ({}: Props) => {
-  const testimonials = [...TESTIMONIALS_CONFIG];
+  const carouselRef = useRef<HTMLDivElement | null>(null);
+
+  // const equalizeItemHeights = () => {
+  //   const items = carouselRef.current?.querySelectorAll<HTMLElement>('.testimonial-item');
+  //   if (!items) return;
+  //
+  //   const maxHeight = Math.max(...Array.from(items, (item) => {
+  //     item.style.height = 'auto'; // Reset height
+  //     return item.offsetHeight;  // Get height
+  //   }));
+  //
+  //   items.forEach((item) => (item.style.height = `${maxHeight}px`));
+  // };
+  const equalizeItemHeights = () => {
+    if (!carouselRef.current) return;
+
+    const items = carouselRef.current.querySelectorAll('.testimonial-item');
+    let maxHeight = 0;
+
+    // Reset heights to auto before recalculating
+    items.forEach((item) => {
+      (item as HTMLElement).style.height = 'auto';
+    });
+
+    // Calculate the maximum height
+    items.forEach((item) => {
+      const height = (item as HTMLElement).offsetHeight;
+      maxHeight = Math.max(maxHeight, height);
+    });
+
+    // Apply the maximum height
+    items.forEach((item) => {
+      (item as HTMLElement).style.height = `${maxHeight + 20}px`;
+    });
+  };
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      equalizeItemHeights();
+    }, 0); // Delay execution until the next event loop iteration
+
+    const handleResize = () => equalizeItemHeights();
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener('resize', handleResize)
+    };
+  }, []);
+
+  const renderTestimonials = () => {
+    return [...TESTIMONIALS_CONFIG].map((testimonial: ITestimonial) => {
+      return (
+        <TestimonialItem key={testimonial.name} testimonial={testimonial} />
+      );
+    })
+  }
 
   return (
-    <div className="home-testimonials">
+    <div ref={carouselRef} className="home-testimonials">
       <Carousel
         additionalTransfrom={0}
         arrows
         className=""
-        containerClass="container-with-dots"
+        containerClass="home-testimonials-carousel"
         dotListClass=""
         draggable
         infinite
@@ -37,17 +96,7 @@ export const HomeTestimonials = ({}: Props) => {
         slidesToSlide={1}
         swipeable
       >
-        {testimonials.map((testimonial) => {
-          const { key, text, name, title, org } = testimonial;
-          return (
-            <div key={key} className="testimonial-item">
-              <p className="text">{text}</p>
-              <p className="name">{name}</p>
-              <p className="title">{title}</p>
-              <p className="org">{org}</p>
-            </div>
-          );
-        })}
+        {renderTestimonials()}
       </Carousel>
     </div>
   );

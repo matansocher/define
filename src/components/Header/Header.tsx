@@ -1,8 +1,9 @@
-import { Link } from 'react-router-dom';
-import './Header.scss';
-import { useIsMobile } from '@hooks';
 import { Button, Dropdown } from 'antd';
+import { Link } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll';
 import { MenuOutlined } from '@ant-design/icons';
+import { useIsMobile } from '@hooks';
+import './Header.scss';
 
 type Props = {
 
@@ -23,10 +24,6 @@ export const Header = ({}: Props) => {
     { key: 3, label: 'Testimonials', link: 'what-people-say' },
   ];
 
-  const handleCtaClick = () => {
-    return console.log("CTA Button Clicked!");
-  }
-
   return (
     <header>
       <div className="header-content">
@@ -40,7 +37,6 @@ export const Header = ({}: Props) => {
             <Dropdown menu={{items}} placement="bottomRight">
               <Button><MenuOutlined/></Button>
             </Dropdown>
-            {/*<button className="main-btn contact-btn" onClick={() => handleCtaClick()}>Let's talk</button>*/}
           </div>
         ) : (
           <div className="header-content-right">
@@ -49,7 +45,9 @@ export const Header = ({}: Props) => {
                 {item.label}
               </Link>
             )}
-            <button className="main-btn contact-btn" onClick={() => handleCtaClick()}>Let's talk</button>
+            <ScrollLink to="contact-form" smooth={true} duration={1000}>
+              <button className="main-btn contact-btn">Let's talk</button>
+            </ScrollLink>
           </div>
         )}
       </div>

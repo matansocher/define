@@ -49,7 +49,7 @@ export const ContactForm = ({}: Props) => {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="contact-form">
+    <form onSubmit={handleSubmit} id="contact-form" className="contact-form">
       <h3>Ready to Define Your Next Chapter?</h3>
       <div className="form-element">
         <input type="email" ref={emailRef} placeholder="your@email.com" required aria-describedby="error-text success-text" />
