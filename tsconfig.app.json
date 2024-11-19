@@ -25,6 +25,7 @@
       "@assets": ["./src/assets"],
       "@components": ["./src/components"],
       "@core/*": ["./src/core/*"],
+      "@hooks": ["./src/hooks"],
       "@interface": ["./src/interface"],
       "@screens": ["./src/screens"],
       "@styles/*": ["./src/styles/*"],

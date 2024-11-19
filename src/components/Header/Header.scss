@@ -20,7 +20,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    a, button {
+    a {
       color: #151B21;
       margin: 0;
       background-color: transparent;
@@ -59,6 +59,27 @@ header {
         font-weight: 600;
       }
     }
+    .mobile {
+      flex-direction: row-reverse;
+      gap: 4px;
+      button {
+        margin-left: 0;
+      }
+      .ant-dropdown-trigger {
+        background: $main-bg;
+        border: none;
+        &:hover {
+          background: $main-bg !important;
+        }
+      }
+    }
+  }
+}
+
+.ant-dropdown {
+  ul {
+    background: $main-bg !important;
+    border: none;
   }
 }
 

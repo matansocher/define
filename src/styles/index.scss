@@ -47,6 +47,7 @@ button {
   justify-content: center;
   align-items: center;
   border-radius: 8px;
+  border: none;
 }
 
 input, textarea {
@@ -111,6 +112,11 @@ input, textarea {
   padding: 16px 80px;
   color: #151b21;
   font-weight: 600;
+  cursor: pointer;
+  transition: opacity .3s;
+  &:hover {
+    opacity: 0.7;
+  }
 }
 
 @media screen and (max-width: 1100px) {
