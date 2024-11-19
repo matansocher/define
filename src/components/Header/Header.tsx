@@ -1,9 +1,8 @@
 import { Link } from 'react-router-dom';
 import './Header.scss';
 import { useIsMobile } from '@hooks';
-import { Button, Dropdown, Menu } from 'antd';
-import { MenuOutlined, MenuUnfoldOutlined } from '@ant-design/icons';
-import { useState } from 'react';
+import { Button, Dropdown } from 'antd';
+import { MenuOutlined } from '@ant-design/icons';
 
 type Props = {
 
