@@ -4,7 +4,7 @@
   .testimonials-wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(calc(50% - 8px), 1fr));
-    gap: 16px;
+    gap: 16px 0;
     margin: 80px 0;
   }
 
