@@ -2,7 +2,7 @@ import { Link as ScrollLink } from 'react-scroll';
 import { ContactForm } from '@components';
 import { HomeTestimonials } from './HomeTestimonials/HomeTestimonials';
 import { homeConfig } from './home-config';
-import { HomeProjects } from './HomeTestimonials/HomeProjects';
+import { HomeProjects } from './HomeProjects/HomeProjects.tsx';
 import './Home.scss';
 
 type Props = {}
@@ -25,14 +25,19 @@ export const Home = ({}: Props) => {
           <h4 className="title">Some Clients & Partners</h4>
         </div>
         <div className="section-content logos-section-wrapper">
-          <div className="logo-track">
+          <div className="logos-track">
             {homeConfig.partnersLogos.map((logo, index) => (
-              <img key={`original-${index}`} src={logo.image} alt={logo.alt} className="logo" />
+              <img key={`original-${index}`} src={logo.image} alt={logo.alt} className="logo"/>
             ))}
             {homeConfig.partnersLogos.map((logo, index) => (
-              <img key={`duplicate-${index}`} src={logo.image} alt={logo.alt} className="logo" />
+              <img key={`duplicate-${index}`} src={logo.image} alt={logo.alt} className="logo"/>
             ))}
           </div>
+          {/*<div className="logos-mobile">*/}
+          {/*  {homeConfig.partnersLogos.map((logo, index) => (*/}
+          {/*    <img key={index} src={logo.image} alt={logo.alt} className="logo"/>*/}
+          {/*  ))}*/}
+          {/*</div>*/}
         </div>
       </div>
 
