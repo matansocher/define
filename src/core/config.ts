@@ -1,8 +1,8 @@
 import { ITestimonial } from '@interface';
 import assets from '@assets';
 
-export const MMPS_BASE_URL = '';
-export const CONTACT_ENDPOINT = '';
+export const MMPS_BASE_URL = 'https://mmps-a9baabab2459.herokuapp.com';
+export const CONTACT_ENDPOINT = 'define/contact';
 
 export const TESTIMONIALS_CONFIG: ITestimonial[] = [
   {

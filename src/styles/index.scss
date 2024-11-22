@@ -117,6 +117,12 @@ input, textarea {
   &:hover {
     opacity: 0.7;
   }
+  &:disabled {
+    background-color: #cccccc;
+    color: #666666;
+    cursor: default;
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width: 1100px) {
