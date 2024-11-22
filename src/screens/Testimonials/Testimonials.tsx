@@ -1,8 +1,7 @@
-import './Testimonials.scss';
-import { ContactForm } from '@components';
-import { ITestimonial } from '@interface';
-import { TestimonialItem } from './TestimonialItem/TestimonialItem';
 import { TESTIMONIALS_CONFIG } from '@core/config';
+import { ContactForm, ScrollSpy, TestimonialItem } from '@components';
+import { ITestimonial } from '@interface';
+import './Testimonials.scss';
 
 type Props = {
 
@@ -19,6 +18,7 @@ export const Testimonials = ({}: Props) => {
 
   return (
     <div className="page-wrapper testimonials-page">
+      <ScrollSpy />
       <div className="section">
         <div className="section-content">
           <h1>What People Say</h1>

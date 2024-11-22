@@ -1,7 +1,7 @@
-import { LoadingOutlined } from '@ant-design/icons';
-import { Spin } from 'antd';
 import axios from 'axios';
+import { Spin } from 'antd';
 import { FormEvent, useRef, useState } from 'react';
+import { LoadingOutlined } from '@ant-design/icons';
 import { CONTACT_ENDPOINT, MMPS_BASE_URL } from '@core/config';
 import { getErrorMessage } from '@core/utils';
 import './ContactForm.scss';
@@ -23,12 +23,10 @@ export const ContactForm = ({}: Props) => {
     email: emailRef.current?.value.trim() || '',
   });
 
-  const validateEmail = (email: string) => {
-    return String(email)
-      .toLowerCase()
-      .match(
-        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-      );
+  const isEmailValid = (email: string): boolean => {
+    return /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
+      String(email).toLowerCase()
+    );
   };
 
   const isFormValid = (): boolean => {
@@ -36,12 +34,12 @@ export const ContactForm = ({}: Props) => {
     return Object.values(formValues).every(value => Boolean(value.trim()));
   }
 
-  const handleSubmit = async (event: FormEvent) => {
+  const handleSubmit = async (event: FormEvent): Promise<void> => {
     event.preventDefault();
     setSuccessText('');
     setErrorText('');
 
-    if (!isFormValid() || !validateEmail(emailRef.current?.value || '')) {
+    if (!isFormValid() || !isEmailValid(emailRef.current?.value || '')) {
       setErrorText('Valid email address is required');
       emailRef.current?.focus();
       return;

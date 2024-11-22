@@ -1,12 +1,12 @@
+import { useEffect, useRef } from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import assets from '@assets';
 import { TESTIMONIALS_CONFIG } from '@core/config';
+import { TestimonialItem } from '@components';
+import { ITestimonial } from '@interface';
 import { carouselConfig } from '../HomeProjects/carousel-config.tsx';
 import './HomeTestimonials.scss';
-import { ITestimonial } from '@interface';
-import { TestimonialItem } from '../../Testimonials/TestimonialItem/TestimonialItem.tsx';
-import { useEffect, useRef } from 'react';
 
 type Props = {}
 

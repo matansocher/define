@@ -53,8 +53,8 @@ export const homeConfig: HomeConfig = {
       text: `Satisfied Customers`,
     },
     {
-      number: '+30',
-      text: `Successful Projects`,
+      number: '+45',
+      text: `Improvement Processes Implemented`,
     }
   ],
   solutions: [

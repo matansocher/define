@@ -1,5 +1,5 @@
 import { Link as ScrollLink } from 'react-scroll';
-import { ContactForm } from '@components';
+import { ContactForm, ScrollSpy } from '@components';
 import { HomeTestimonials } from './HomeTestimonials/HomeTestimonials';
 import { homeConfig } from './home-config';
 import { HomeProjects } from './HomeProjects/HomeProjects.tsx';
@@ -10,6 +10,7 @@ type Props = {}
 export const Home = ({}: Props) => {
   return (
     <div className="page-wrapper home-page">
+      <ScrollSpy />
       <div className="section hero-section">
         <div className="section-content">
             <h1 className="title">Define better processes for your organization</h1>
