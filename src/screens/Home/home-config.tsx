@@ -4,6 +4,8 @@ interface NumberItem {
   number: string;
   text: string;
   additionalTextOnBottom?: string;
+  additionalTextTopLeft?: string;
+  additionalTextTopRight?: string;
 }
 
 interface SolutionItem {
@@ -24,7 +26,6 @@ interface ProjectItem {
   image: string;
   title: string;
   numbers: NumberItem[];
-  additionalTextAboveNumbers?: string;
   tags: string[];
 }
 
@@ -106,97 +107,89 @@ export const homeConfig: HomeConfig = {
   ],
   projects: [
     {
-      title: 'Salary Additions system',
-      additionalTextAboveNumbers: '*estimation based on the costs of staff usually needed ',
+      title: 'Salary Additions System',
       numbers: [
-        { number: '2', text: 'people saved in project' },
-        { number: '98.5%', text: 'of calculations were successfully automated' },
-        { number: '95%', text: 'automations approved by 10th of month', additionalTextOnBottom: '66.67% reduction in time' },
-        { number: '12', text: 'months duration' },
+        { number: '2', text: 'People saved in project', additionalTextTopLeft: '*estimation based on the costs of staff usually needed ', },
+        { number: '98.5%', text: 'Calculations were successfully automated' },
+        { number: '95%', text: 'Automations approved by 10th of month', additionalTextOnBottom: '66.67% reduction in time' },
+        { number: '12', text: 'Months duration' },
       ],
       image: assets.homeProject1,
       tags: ['#UXUI', '#Product', '#Research', '#QA'],
     },
     {
-      title: 'New Employee Onboarding',
-      additionalTextAboveNumbers: '*estimation based on the costs of staff usually needed ',
+      title: 'Marketer',
       numbers: [
-        { number: '2', text: 'people saved in project' },
-        { number: '98.5%', text: 'of calculations were successfully automated' },
-        { number: '95%', text: 'automations approved by 10th of month', additionalTextOnBottom: '66.67% reduction in time' },
-        { number: '12', text: 'months duration' },
+        { number: '2', text: 'People saved in project', additionalTextTopLeft: '*estimation based on the costs of staff usually needed ', },
+        { number: '98.5%', text: 'Calculations were successfully automated' },
+        { number: '95%', text: 'Automations approved by 10th of month', additionalTextOnBottom: '66.67% reduction in time' },
+        { number: '12', text: 'Months duration' },
       ],
       image: assets.homeProject2,
       tags: ['#UXUI', '#Product', '#Research', '#QA'],
     },
     {
-      title: 'Marketer',
-      additionalTextAboveNumbers: '*estimation based on the costs of staff usually needed ',
+      title: 'Digital Employee Homepage',
       numbers: [
-        { number: '2', text: 'people saved in project' },
-        { number: '98.5%', text: 'of calculations were successfully automated' },
-        { number: '95%', text: 'automations approved by 10th of month', additionalTextOnBottom: '66.67% reduction in time' },
-        { number: '12', text: 'months duration' },
+        { number: '2', text: 'People saved in project', additionalTextTopLeft: '*estimation based on the costs of staff usually needed ', },
+        { number: '98.5%', text: 'Calculations were successfully automated' },
+        { number: '95%', text: 'Automations approved by 10th of month', additionalTextOnBottom: '66.67% reduction in time' },
+        { number: '12', text: 'Months duration' },
       ],
       image: assets.homeProject3,
       tags: ['#UXUI', '#Product', '#Research', '#QA'],
     },
     {
-      title: '$$$$$$$$',
-      additionalTextAboveNumbers: '*estimation based on the costs of staff usually needed ',
+      title: 'MYCO',
       numbers: [
-        { number: '2', text: 'people saved in project' },
-        { number: '98.5%', text: 'of calculations were successfully automated' },
-        { number: '95%', text: 'automations approved by 10th of month', additionalTextOnBottom: '66.67% reduction in time' },
-        { number: '12', text: 'months duration' },
+        { number: '2', text: 'People saved in project', additionalTextTopLeft: '*estimation based on the costs of staff usually needed ', },
+        { number: '98.5%', text: 'Calculations were successfully automated' },
+        { number: '95%', text: 'Automations approved by 10th of month', additionalTextOnBottom: '66.67% reduction in time' },
+        { number: '12', text: 'Months duration' },
       ],
       image: assets.homeProject4,
       tags: ['#UXUI', '#Product', '#Research', '#QA'],
     },
     {
-      title: '$$$$$$$$$',
-      additionalTextAboveNumbers: '*estimation based on the costs of staff usually needed ',
+      title: 'Beacon',
       numbers: [
-        { number: '2', text: 'people saved in project' },
-        { number: '98.5%', text: 'of calculations were successfully automated' },
-        { number: '95%', text: 'automations approved by 10th of month', additionalTextOnBottom: '66.67% reduction in time' },
-        { number: '12', text: 'months duration' },
+        { number: '2', text: 'People saved in project', additionalTextTopLeft: '*estimation based on the costs of staff usually needed ', },
+        { number: '98.5%', text: 'Calculations were successfully automated' },
+        { number: '95%', text: 'Automations approved by 10th of month', additionalTextOnBottom: '66.67% reduction in time' },
+        { number: '12', text: 'Months duration' },
       ],
       image: assets.homeProject5,
       tags: ['#UXUI', '#Product', '#Research', '#QA'],
     },
     {
       title: '$$$$$$$$$$',
-      additionalTextAboveNumbers: '*estimation based on the costs of staff usually needed ',
       numbers: [
-        { number: '2', text: 'people saved in project' },
-        { number: '98.5%', text: 'of calculations were successfully automated' },
-        { number: '95%', text: 'automations approved by 10th of month', additionalTextOnBottom: '66.67% reduction in time' },
-        { number: '12', text: 'months duration' },
+        { number: '2', text: 'People saved in project', additionalTextTopLeft: '*estimation based on the costs of staff usually needed ', },
+        { number: '98.5%', text: 'Calculations were successfully automated' },
+        { number: '95%', text: 'Automations approved by 10th of month', additionalTextOnBottom: '66.67% reduction in time' },
+        { number: '12', text: 'Months duration' },
       ],
       image: assets.homeProject6,
       tags: ['#UXUI', '#Product', '#Research', '#QA'],
     },
     {
       title: '$$$$$$$$$$$$',
-      additionalTextAboveNumbers: '*estimation based on the costs of staff usually needed ',
       numbers: [
-        { number: '2', text: 'people saved in project' },
-        { number: '98.5%', text: 'of calculations were successfully automated' },
-        { number: '95%', text: 'automations approved by 10th of month', additionalTextOnBottom: '66.67% reduction in time' },
-        { number: '12', text: 'months duration' },
+        { number: '2', text: 'People saved in project', additionalTextTopLeft: '*estimation based on the costs of staff usually needed ', },
+        { number: '98.5%', text: 'Calculations were successfully automated' },
+        { number: '95%', text: 'Automations approved by 10th of month', additionalTextOnBottom: '66.67% reduction in time' },
+        { number: '12', text: 'Months duration' },
       ],
       image: assets.homeProject7,
       tags: ['#UXUI', '#Product', '#Research', '#QA'],
     },
     {
       title: '$$$$$$$$$$$$$',
-      additionalTextAboveNumbers: '*estimation based on the costs of staff usually needed ',
       numbers: [
-        { number: '2', text: 'people saved in project' },
-        { number: '98.5%', text: 'of calculations were successfully automated' },
-        { number: '95%', text: 'automations approved by 10th of month', additionalTextOnBottom: '66.67% reduction in time' },
-        { number: '12', text: 'months duration' },
+        { number: '2', text: 'People saved in project', additionalTextTopLeft: '*estimation based on the costs of staff usually needed ', },
+        { number: '98.5%', text: 'Calculations were successfully automated' },
+        { number: '95%', text: 'Automations approved by 10th of month', additionalTextOnBottom: '66.67% reduction in time' },
+        { number: '12', text: 'Months duration' },
       ],
       image: assets.homeProject8,
       tags: ['#UXUI', '#Product', '#Research', '#QA'],

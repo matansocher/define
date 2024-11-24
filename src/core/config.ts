@@ -9,7 +9,7 @@ export const TESTIMONIALS_CONFIG: ITestimonial[] = [
     name: 'Roy Akoka',
     title: 'CEO & Co-Founder',
     logo: assets.trustechWhite,
-    text: '“Collaborating with Dekel was instrumental in driving our projects at TrusTech forward. She consistently delivered results that exceeded expectations in both web and mobile products. Dekel worked closely with our design and development teams, always flexible and attuned to the changing needs of our organization, while ensuring our clients received exceptional service. Her interpersonal skills fostered great cooperation across teams, from management to key users, allowing her to truly understand, define, and prioritize our requirements. Her professional, client-centered approach has been invaluable”',
+    text: 'Collaborating with Dekel was instrumental in driving our projects at TrusTech forward. She consistently delivered results that exceeded expectations in both web and mobile products. Dekel worked closely with our design and development teams, always flexible and attuned to the changing needs of our organization, while ensuring our clients received exceptional service. Her interpersonal skills fostered great cooperation across teams, from management to key users, allowing her to truly understand, define, and prioritize our requirements. Her professional, client-centered approach has been invaluable',
   },
   {
     name: 'Ariel Zamir',
@@ -20,7 +20,6 @@ export const TESTIMONIALS_CONFIG: ITestimonial[] = [
   {
     name: 'Barak Ze’evi',
     title: 'Operational Systems Head of Department',
-    org: 'Tel Aviv Municipality',
     logo: assets.tlvMuniColored,
     text: 'I am extremely satisfied with the results of our collaboration with our UX designer. She was a key member of our team, and her contributions were invaluable to the success of the project. She was able to identify and address issues early on, which made the development process more efficient and effective',
   },
@@ -28,7 +27,7 @@ export const TESTIMONIALS_CONFIG: ITestimonial[] = [
     name: 'Tal Soffer',
     title: 'Founder',
     logo: assets.sofferWhite,
-    text: '“I had the pleasure of working with Dekel as a designer and UX specialist, and she really knows how to get the job done right. Beyond her impressive design skills, she brings strategic thinking and a sharp understanding of exactly what the user needs, executing it with precision and professionalism. You can rely on her to strike the perfect balance between creativity and practicality.”',
+    text: 'I had the pleasure of working with Dekel as a designer and UX specialist, and she really knows how to get the job done right. Beyond her impressive design skills, she brings strategic thinking and a sharp understanding of exactly what the user needs, executing it with precision and professionalism. You can rely on her to strike the perfect balance between creativity and practicality.',
   },
   {
     name: 'Doron Breuer',
@@ -45,7 +44,7 @@ export const TESTIMONIALS_CONFIG: ITestimonial[] = [
   {
     name: 'Amir Birnhack',
     title: 'Digital Consultant & System Admin',
-    text: '“Working with Dekel on projects was an outstanding experience. Her quick, thorough approach consistently ensured that our implementation projects were both successful and enjoyable. Dekel brought a high level of professionalism, effective communication, and a genuine spirit of collaboration to each project. Trust was the foundation of our work together, and she quickly became a reliable partner whom I could count on to meet our goals efficiently. Her friendly and dedicated approach made our collaboration both highly effective and personally rewarding, and I look forward to any future projects together״',
+    text: 'Working with Dekel on projects was an outstanding experience. Her quick, thorough approach consistently ensured that our implementation projects were both successful and enjoyable. Dekel brought a high level of professionalism, effective communication, and a genuine spirit of collaboration to each project. Trust was the foundation of our work together, and she quickly became a reliable partner whom I could count on to meet our goals efficiently. Her friendly and dedicated approach made our collaboration both highly effective and personally rewarding, and I look forward to any future projects together״',
   },
   {
     name: 'Ira Pavlova',

@@ -4,4 +4,4 @@ export interface ITestimonial {
   readonly title: string;
   readonly org?: string;
   readonly logo?: string;
-};
+}

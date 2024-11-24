@@ -67,7 +67,8 @@
     .section-content {
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
+      gap: 200px;
       .number-item {
         display: flex;
         align-items: center;
@@ -95,7 +96,7 @@
       .solutions-items {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
         gap: 50px;
         margin-top: 100px;
         .solutions-item {
@@ -116,7 +117,7 @@
   .projects-section {
     background: #303030;
     .section-content {
-      max-width: 1100px;
+      max-width: 1200px;
       h2 {
         text-align: center;
         margin-bottom: 40px;
@@ -126,6 +127,7 @@
 
   .services-section {
     background: #de82ff;
+    padding: 150px 0;
     .section-content {
       position: relative;
       max-width: 820px;
@@ -166,6 +168,7 @@
 
   .testimonials-section {
     .section-content {
+      max-width: 1500px;
       h2 {
         text-align: center;
         margin-bottom: 80px;

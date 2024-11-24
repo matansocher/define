@@ -1,7 +1,6 @@
 import { useEffect, useRef } from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import assets from '@assets';
 import { TESTIMONIALS_CONFIG } from '@core/config';
 import { TestimonialItem } from '@components';
 import { ITestimonial } from '@interface';
@@ -73,7 +72,7 @@ export const HomeTestimonials = ({}: Props) => {
     <div ref={carouselRef} className="home-testimonials">
       <Carousel
         additionalTransfrom={0}
-        arrows
+        arrows={false}
         className=""
         containerClass="home-testimonials-carousel"
         dotListClass=""
@@ -87,7 +86,7 @@ export const HomeTestimonials = ({}: Props) => {
         showDots
         renderDotsOutside
         responsive={carouselConfig.testimonials.responsive}
-        customButtonGroup={<CustomButtonGroupAsArrows />}
+        // customButtonGroup={<CustomButtonGroupAsArrows />}
         rewind={false}
         rewindWithAnimation={false}
         rtl={false}
@@ -102,11 +101,11 @@ export const HomeTestimonials = ({}: Props) => {
   );
 };
 
-const CustomButtonGroupAsArrows = ({ next, previous }: any) => {
-  return (
-    <div className="custom-button-group">
-      <button onClick={previous}><img src={assets.chvronLeft} alt=""/></button>
-      <button onClick={next}><img src={assets.chvronRight} alt=""/></button>
-    </div>
-  );
-};
+// const CustomButtonGroupAsArrows = ({ next, previous }: any) => {
+//   return (
+//     <div className="custom-button-group">
+//       <button onClick={previous}><img src={assets.chvronLeft} alt=""/></button>
+//       <button onClick={next}><img src={assets.chvronRight} alt=""/></button>
+//     </div>
+//   );
+// };

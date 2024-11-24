@@ -21,22 +21,22 @@ export const carouselConfig: Record<string, CarouselConfig> = {
       desktop: {
         breakpoint: {
           max: 3000,
-          min: 1100
+          min: 1600
         },
         items: 3,
         partialVisibilityGutter: 40
       },
       tablet: {
         breakpoint: {
-          max: 1100,
-          min: 700
+          max: 1600,
+          min: 900
         },
         items: 2,
         partialVisibilityGutter: 30
       },
       mobile: {
         breakpoint: {
-          max: 700,
+          max: 900,
           min: 0
         },
         items: 1,
