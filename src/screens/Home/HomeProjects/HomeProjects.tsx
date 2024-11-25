@@ -3,6 +3,7 @@ import 'react-multi-carousel/lib/styles.css';
 import './HomeProjects.scss';
 import { carouselConfig } from './carousel-config.tsx';
 import { homeConfig } from '../home-config.tsx';
+import assets from '@assets';
 
 type Props = {}
 
@@ -25,7 +26,7 @@ export const HomeProjects = ({}: Props) => {
         showDots
         renderDotsOutside
         responsive={carouselConfig.projects.responsive}
-        // customButtonGroup={<CustomButtonGroupAsArrows />}
+        customButtonGroup={<CustomButtonGroupAsArrows />}
         rewind={false}
         rewindWithAnimation={false}
         rtl={false}
@@ -66,11 +67,11 @@ export const HomeProjects = ({}: Props) => {
   );
 };
 
-// const CustomButtonGroupAsArrows = ({ next, previous }: any) => {
-//   return (
-//     <div className="custom-button-group">
-//       <button onClick={previous}><img src={assets.chvronLeft} alt=""/></button>
-//       <button onClick={next}><img src={assets.chvronRight} alt=""/></button>
-//     </div>
-//   );
-// };
+const CustomButtonGroupAsArrows = ({ next, previous }: any) => {
+  return (
+    <div className="custom-button-group">
+      <button onClick={previous}><img src={assets.chvronLeft} alt=""/></button>
+      <button onClick={next}><img src={assets.chvronRight} alt=""/></button>
+    </div>
+  );
+};
