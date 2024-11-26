@@ -5,22 +5,23 @@ interface Asset {
 
 const homeAssetsPath = 'home';
 const homeAssets: Asset[] = [
-  { name: 'homeServices1', file : `${homeAssetsPath}/home-services-1.png` },
-  { name: 'homeServices2', file : `${homeAssetsPath}/home-services-2.png` },
-  { name: 'homeServices3', file : `${homeAssetsPath}/home-services-3.png` },
-  { name: 'homeServices4', file : `${homeAssetsPath}/home-services-4.png` },
-  { name: 'homeServices5', file : `${homeAssetsPath}/home-services-5.png` },
+  { name: 'peopleIconBlack', file : `${homeAssetsPath}/people-icon-black.png` },
+  { name: 'speedLimitBlack', file : `${homeAssetsPath}/speed-limit-black.png` },
+  { name: 'lightBulbBlack', file : `${homeAssetsPath}/light-bulb-black.png` },
+  { name: 'checkMarkBlack', file : `${homeAssetsPath}/check-mark-black.png` },
+  { name: 'arrowRightBlack', file : `${homeAssetsPath}/arrow-right-black.png` },
   { name: 'homeSolutions1', file : `${homeAssetsPath}/home-solutions-1.png` },
   { name: 'homeSolutions2', file : `${homeAssetsPath}/home-solutions-2.png` },
   { name: 'homeSolutions3', file : `${homeAssetsPath}/home-solutions-3.png` },
-  { name: 'homeProject1', file: `${homeAssetsPath}/home-project-1.png` },
-  { name: 'homeProject2', file: `${homeAssetsPath}/home-project-2.png` },
-  { name: 'homeProject3', file: `${homeAssetsPath}/home-project-3.png` },
-  { name: 'homeProject4', file: `${homeAssetsPath}/home-project-4.png` },
-  { name: 'homeProject5', file: `${homeAssetsPath}/home-project-5.png` },
-  { name: 'homeProject6', file: `${homeAssetsPath}/home-project-6.png` },
-  { name: 'homeProject7', file: `${homeAssetsPath}/home-project-7.png` },
-  { name: 'homeProject8', file: `${homeAssetsPath}/home-project-8.png` },
+  { name: 'homeProjectSalaries', file: `${homeAssetsPath}/home-project-salaries.png` },
+  { name: 'homeProjectEmployeeOnboarding', file: `${homeAssetsPath}/home-project-employee-onboarding.png` },
+  { name: 'homeProjectMarketer', file: `${homeAssetsPath}/home-project-marketer.png` },
+  { name: 'homeProjectDigitalEmployee', file: `${homeAssetsPath}/home-project-digital-employee.png` },
+  { name: 'homeProjectMyco', file: `${homeAssetsPath}/home-project-myco.png` },
+  { name: 'homeProjectBeacon', file: `${homeAssetsPath}/home-project-beacon.png` },
+  { name: 'homeProjectEngineeringPermitsDivision', file: `${homeAssetsPath}/home-project-engineering-permits-division.png` },
+  { name: 'homeProjectAutomatedReports', file: `${homeAssetsPath}/home-project-automated-reports.png` },
+  { name: 'homeProjectAppDx', file: `${homeAssetsPath}/home-project-app-dx.png` },
 ];
 
 const partnersLogosPath = 'shared/partners-logos';

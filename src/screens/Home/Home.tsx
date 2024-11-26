@@ -2,7 +2,7 @@ import { Link as ScrollLink } from 'react-scroll';
 import { ContactForm, ScrollSpy } from '@components';
 import { HomeTestimonials } from './HomeTestimonials/HomeTestimonials';
 import { homeConfig } from './home-config';
-import { HomeProjects } from './HomeProjects/HomeProjects.tsx';
+import { HomeProjects } from './HomeProjects/HomeProjects';
 import './Home.scss';
 
 type Props = {}
@@ -60,7 +60,7 @@ export const Home = ({}: Props) => {
             <div className="solutions-items">
               {homeConfig.solutions.map((solution, i) => (
                 <div className="solutions-item" key={i}>
-                  <img src={solution.image} alt=""/>
+                  <img src={solution.image} alt="solution illustration"/>
                   <h3 className={`title`} style={solution.additionalHeaderStyle || {}}>{solution.title}</h3>
                   <p style={solution.additionalTextStyle || {}}>{solution.text}</p>
                   <ScrollLink to="contact-form" smooth={true} duration={1000}>

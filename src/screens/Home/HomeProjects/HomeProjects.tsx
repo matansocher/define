@@ -1,8 +1,7 @@
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import './HomeProjects.scss';
-import { carouselConfig } from './carousel-config.tsx';
-import { homeConfig } from '../home-config.tsx';
+import { carouselConfig, projectsCarouselData } from './carousel-config';
 import assets from '@assets';
 
 type Props = {}
@@ -35,7 +34,7 @@ export const HomeProjects = ({}: Props) => {
         slidesToSlide={1}
         swipeable
       >
-        {homeConfig.projects.map((project) => {
+        {projectsCarouselData.map((project) => {
           // const { title, numbers, image, additionalTextAboveNumbers, tags } = project;
           const { title, numbers, image, tags } = project;
           return (
@@ -70,8 +69,8 @@ export const HomeProjects = ({}: Props) => {
 const CustomButtonGroupAsArrows = ({ next, previous }: any) => {
   return (
     <div className="custom-button-group">
-      <button onClick={previous}><img src={assets.chvronLeft} alt=""/></button>
-      <button onClick={next}><img src={assets.chvronRight} alt=""/></button>
+      <button onClick={previous}><img src={assets.chvronLeft} alt="arrow left"/></button>
+      <button onClick={next}><img src={assets.chvronRight} alt="arrow right"/></button>
     </div>
   );
 };

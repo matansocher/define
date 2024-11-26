@@ -1,4 +1,4 @@
-import { TESTIMONIALS_CONFIG } from '@core/config';
+import { TESTIMONIALS_CONFIG } from '@core/testimonials-config.ts';
 import { ContactForm, ScrollSpy, TestimonialItem } from '@components';
 import { ITestimonial } from '@interface';
 import './Testimonials.scss';

@@ -1,6 +1,6 @@
 import assets from '@assets';
 
-interface NumberItem {
+export interface NumberItem {
   number: string;
   text: string;
   additionalTextOnBottom?: string;
@@ -22,13 +22,6 @@ interface ServiceItem {
   text: string;
 }
 
-interface ProjectItem {
-  image: string;
-  title: string;
-  numbers: NumberItem[];
-  tags: string[];
-}
-
 interface PartnerLogoItem {
   image: string;
   alt: string;
@@ -39,7 +32,6 @@ interface HomeConfig {
   numbers: NumberItem[];
   solutions: SolutionItem[];
   services: ServiceItem[];
-  projects: ProjectItem[];
   partnersLogos: PartnerLogoItem[];
 }
 
@@ -80,119 +72,29 @@ export const homeConfig: HomeConfig = {
   ],
   services: [
     {
-      image: assets.homeServices1,
+      image: assets.peopleIconBlack,
       title: 'Product Design Workshops',
       text: 'Structured workshops to accelerate feature ideation, testing, and development while aligning key stakeholders from Product, Design, and other departments to streamline requirements and drive collaboration.',
     },
     {
-      image: assets.homeServices2,
+      image: assets.speedLimitBlack,
       title: 'UX Process Optimization',
       text: 'Assessing and refining UX workflows to reduce time-to-market, improve efficiency, and foster better cross-functional alignment.',
     },
     {
-      image: assets.homeServices3,
+      image: assets.lightBulbBlack,
       title: 'UX Expert for Complex Systems',
       text: 'Expertise in designing complex systems and user flows, ensuring intuitive navigation and optimized user experiences for multifaceted products.',
     },
     {
-      image: assets.homeServices4,
+      image: assets.checkMarkBlack,
       title: 'User Research & Testing',
       text: 'Conducting and analyzing user research to validate concepts, inform product decisions, and ensure that design choices are data-driven and user-centric.',
     },
     {
-      image: assets.homeServices5,
+      image: assets.arrowRightBlack,
       title: 'Product and UX Strategy Alignment',
       text: 'Defining and aligning UX deliverable with product goals to ensure that design decisions support business KPIs and enhance user satisfaction.',
-    },
-  ],
-  projects: [
-    {
-      title: 'Salary Additions System',
-      numbers: [
-        { number: '2', text: 'People saved in project', additionalTextTopLeft: '*estimation based on the costs of staff usually needed ', },
-        { number: '98.5%', text: 'Calculations were successfully automated' },
-        { number: '95%', text: 'Automations approved by 10th of month', additionalTextOnBottom: '66.67% reduction in time' },
-        { number: '12', text: 'Months duration' },
-      ],
-      image: assets.homeProject1,
-      tags: ['#UXUI', '#Product', '#Research', '#QA'],
-    },
-    {
-      title: 'Marketer',
-      numbers: [
-        { number: '2', text: 'People saved in project', additionalTextTopLeft: '*estimation based on the costs of staff usually needed ', },
-        { number: '98.5%', text: 'Calculations were successfully automated' },
-        { number: '95%', text: 'Automations approved by 10th of month', additionalTextOnBottom: '66.67% reduction in time' },
-        { number: '12', text: 'Months duration' },
-      ],
-      image: assets.homeProject2,
-      tags: ['#UXUI', '#Product', '#Research', '#QA'],
-    },
-    {
-      title: 'Digital Employee Homepage',
-      numbers: [
-        { number: '2', text: 'People saved in project', additionalTextTopLeft: '*estimation based on the costs of staff usually needed ', },
-        { number: '98.5%', text: 'Calculations were successfully automated' },
-        { number: '95%', text: 'Automations approved by 10th of month', additionalTextOnBottom: '66.67% reduction in time' },
-        { number: '12', text: 'Months duration' },
-      ],
-      image: assets.homeProject3,
-      tags: ['#UXUI', '#Product', '#Research', '#QA'],
-    },
-    {
-      title: 'MYCO',
-      numbers: [
-        { number: '2', text: 'People saved in project', additionalTextTopLeft: '*estimation based on the costs of staff usually needed ', },
-        { number: '98.5%', text: 'Calculations were successfully automated' },
-        { number: '95%', text: 'Automations approved by 10th of month', additionalTextOnBottom: '66.67% reduction in time' },
-        { number: '12', text: 'Months duration' },
-      ],
-      image: assets.homeProject4,
-      tags: ['#UXUI', '#Product', '#Research', '#QA'],
-    },
-    {
-      title: 'Beacon',
-      numbers: [
-        { number: '2', text: 'People saved in project', additionalTextTopLeft: '*estimation based on the costs of staff usually needed ', },
-        { number: '98.5%', text: 'Calculations were successfully automated' },
-        { number: '95%', text: 'Automations approved by 10th of month', additionalTextOnBottom: '66.67% reduction in time' },
-        { number: '12', text: 'Months duration' },
-      ],
-      image: assets.homeProject5,
-      tags: ['#UXUI', '#Product', '#Research', '#QA'],
-    },
-    {
-      title: '$$$$$$$$$$',
-      numbers: [
-        { number: '2', text: 'People saved in project', additionalTextTopLeft: '*estimation based on the costs of staff usually needed ', },
-        { number: '98.5%', text: 'Calculations were successfully automated' },
-        { number: '95%', text: 'Automations approved by 10th of month', additionalTextOnBottom: '66.67% reduction in time' },
-        { number: '12', text: 'Months duration' },
-      ],
-      image: assets.homeProject6,
-      tags: ['#UXUI', '#Product', '#Research', '#QA'],
-    },
-    {
-      title: '$$$$$$$$$$$$',
-      numbers: [
-        { number: '2', text: 'People saved in project', additionalTextTopLeft: '*estimation based on the costs of staff usually needed ', },
-        { number: '98.5%', text: 'Calculations were successfully automated' },
-        { number: '95%', text: 'Automations approved by 10th of month', additionalTextOnBottom: '66.67% reduction in time' },
-        { number: '12', text: 'Months duration' },
-      ],
-      image: assets.homeProject7,
-      tags: ['#UXUI', '#Product', '#Research', '#QA'],
-    },
-    {
-      title: '$$$$$$$$$$$$$',
-      numbers: [
-        { number: '2', text: 'People saved in project', additionalTextTopLeft: '*estimation based on the costs of staff usually needed ', },
-        { number: '98.5%', text: 'Calculations were successfully automated' },
-        { number: '95%', text: 'Automations approved by 10th of month', additionalTextOnBottom: '66.67% reduction in time' },
-        { number: '12', text: 'Months duration' },
-      ],
-      image: assets.homeProject8,
-      tags: ['#UXUI', '#Product', '#Research', '#QA'],
     },
   ],
   partnersLogos: [

@@ -1,10 +1,10 @@
 import { useEffect, useRef } from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import { TESTIMONIALS_CONFIG } from '@core/config';
+import { TESTIMONIALS_CONFIG } from '@core/testimonials-config.ts';
 import { TestimonialItem } from '@components';
 import { ITestimonial } from '@interface';
-import { carouselConfig } from '../HomeProjects/carousel-config.tsx';
+import { carouselConfig } from '../HomeProjects/carousel-config';
 import './HomeTestimonials.scss';
 
 type Props = {}
@@ -104,8 +104,8 @@ export const HomeTestimonials = ({}: Props) => {
 // const CustomButtonGroupAsArrows = ({ next, previous }: any) => {
 //   return (
 //     <div className="custom-button-group">
-//       <button onClick={previous}><img src={assets.chvronLeft} alt=""/></button>
-//       <button onClick={next}><img src={assets.chvronRight} alt=""/></button>
+//       <button onClick={previous}><img src={assets.chvronLeft} alt="arrow left"/></button>
+//       <button onClick={next}><img src={assets.chvronRight} alt="arrow right"/></button>
 //     </div>
 //   );
 // };
