@@ -2,7 +2,7 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import './HomeProjects.scss';
 import { carouselConfig, projectsCarouselData } from './carousel-config';
-import assets from '@assets';
+import { assets } from '@assets';
 
 type Props = {}
 

@@ -1,5 +1,5 @@
 import { ITestimonial } from '@interface';
-import assets from '@assets';
+import { assets } from '@assets';
 
 export const TESTIMONIALS_CONFIG: ITestimonial[] = [
   {

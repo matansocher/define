@@ -1,4 +1,4 @@
-import assets from '@assets';
+import { assets } from '@assets';
 import { NumberItem } from '../home-config';
 
 interface PlatformInfo {
