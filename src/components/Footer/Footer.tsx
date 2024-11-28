@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import DoneIcon from '@mui/icons-material/Done';
-import { pink } from '@mui/material/colors';
 import './Footer.scss';
 
 type Props = {
