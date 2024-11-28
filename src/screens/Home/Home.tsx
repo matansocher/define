@@ -1,8 +1,10 @@
+import { Link } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
 import { ContactForm, ScrollSpy } from '@components';
-import { HomeTestimonials } from './HomeTestimonials/HomeTestimonials';
 import { homeConfig } from './home-config';
+import { HomeTestimonials } from './HomeTestimonials/HomeTestimonials';
 import { HomeProjects } from './HomeProjects/HomeProjects';
+import { HomeTimeOptimization } from './HomeTimeOptimization/HomeTimeOptimization.tsx';
 import './Home.scss';
 
 type Props = {}
@@ -10,14 +12,14 @@ type Props = {}
 export const Home = ({}: Props) => {
   return (
     <div className="page-wrapper home-page">
-      <ScrollSpy />
+      <ScrollSpy/>
       <div className="section hero-section">
         <div className="section-content">
-            <h1 className="title">Define better processes for your organization</h1>
-            <p className="text">Make your path to success shorter</p>
-            <ScrollLink to="contact-form" smooth={true} duration={1000}>
-              <button className="main-btn">Let’s talk</button>
-            </ScrollLink>
+          <h1 className="title">Define better processes for your organization</h1>
+          <p className="text">Make your path to success shorter</p>
+          <ScrollLink to="contact-form" smooth={true} duration={1000}>
+            <button className="main-btn">Let’s talk</button>
+          </ScrollLink>
         </div>
       </div>
 
@@ -56,19 +58,19 @@ export const Home = ({}: Props) => {
       <div className="section solutions-section">
         <div className="section-content">
           <h2>Choose Your Fit</h2>
-          <div className="section-content">
-            <div className="solutions-items">
-              {homeConfig.solutions.map((solution, i) => (
-                <div className="solutions-item" key={i}>
-                  <img src={solution.image} alt="solution illustration"/>
-                  <h3 className={`title`} style={solution.additionalHeaderStyle || {}}>{solution.title}</h3>
-                  <p style={solution.additionalTextStyle || {}}>{solution.text}</p>
-                  <ScrollLink to="contact-form" smooth={true} duration={1000}>
-                    <button className="main-btn">Let's Talk</button>
-                  </ScrollLink>
+          <div className="solutions-items">
+            {homeConfig.solutions.map((solution, i) => (
+              <div className="solutions-item" key={i}>
+                <img src={solution.image} alt="solution illustration"/>
+                <div className="content">
+                  <h3 className="title" style={solution.additionalHeaderStyle || {}}>{solution.title}</h3>
+                  <p className="text" style={solution.additionalTextStyle || {}}>{solution.text}</p>
                 </div>
-              ))}
-            </div>
+                <ScrollLink to="contact-form" smooth={true} duration={1000}>
+                  <button className="main-btn">Let's Talk</button>
+                </ScrollLink>
+              </div>
+            ))}
           </div>
         </div>
       </div>
@@ -76,7 +78,7 @@ export const Home = ({}: Props) => {
       <div className="section projects-section">
         <div className="section-content">
           <h2>Projects</h2>
-          <HomeProjects />
+          <HomeProjects/>
         </div>
       </div>
 
@@ -87,18 +89,29 @@ export const Home = ({}: Props) => {
             {homeConfig.services.map((service, i) => (
               <div className="services-item" key={i}>
                 <img src={service.image} alt=""/>
-                <h3>{service.title}</h3>
-                <p>{service.text}</p>
+                <div className="content">
+                  <h3>{service.title}</h3>
+                  <p>{service.text}</p>
+                </div>
               </div>
             ))}
           </div>
         </div>
       </div>
 
+      <div className="section time-optimization">
+        <div className="section-content">
+          <HomeTimeOptimization />
+        </div>
+      </div>
+
       <div className="section testimonials-section">
         <div className="section-content">
-          <h2>What People Say</h2>
-          <HomeTestimonials />
+          <div className="headers">
+            <h2>What People Say</h2>
+            <Link to={'/testimonials'}>All Testimonials</Link>
+          </div>
+          <HomeTestimonials/>
         </div>
       </div>
 

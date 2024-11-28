@@ -13,7 +13,7 @@
     color: #dee4ea;
     font-size: 18px;
     font-weight: 500;
-    line-height: 24px;
+    line-height: 27px;
   }
   &-bottom {
     display: flex;
@@ -41,6 +41,7 @@
     }
     &-right {
       img {
+        max-width: 120px;
         max-height: 50px;
       }
     }

@@ -6,17 +6,21 @@
 
   .react-multi-carousel-dot-list {
     gap: 4px;
+    bottom: -10px;
     .react-multi-carousel-dot {
-      background: #7c7c7c;
-      width: 7px !important;
-      height: 7px !important;
-      border-radius: 50%;
       button {
-        opacity: 0 !important;
+        background: #7c7c7c;
+        width: 7px !important;
+        height: 7px !important;
+        border-radius: 50%;
+        border: none;
+        margin-right: 0;
       }
     }
     .react-multi-carousel-dot--active {
-      background: #d9d9d9;
+      button {
+        background: #d9d9d9;
+      }
     }
   }
 

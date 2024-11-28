@@ -96,7 +96,7 @@
       .solutions-items {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         gap: 50px;
         margin-top: 100px;
         .solutions-item {
@@ -106,7 +106,28 @@
           align-items: center;
           text-align: center;
           gap: 20px;
+          img {
+            width: 56px;
+            height: auto;
+          }
+          .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            .title {
+              font-size: 26px;
+              line-height: 36px;
+              max-width: 300px;
+            }
+            .text {
+              font-size: 16px;
+              line-height: 22px;
+              max-width: 300px;
+            }
+          }
           .main-btn {
+            margin-top: 20px;
             padding: 16px 40px;
           }
         }
@@ -149,29 +170,50 @@
         flex-direction: column;
         gap: 40px;
         .services-item {
-          position: relative;
+          display: flex;
+          align-items: flex-start;
+          gap: 20px;
           padding-left: 50px;
-          p {
-            margin-top: 20px;
-            font-weight: 300;
-            line-height: 26px;
-          }
           img {
-            position: absolute;
-            top: 0;
-            left: 0;
+            //position: absolute;
+            //top: 0;
+            //left: 0;
+            //width: 32px;
+            //height: 32px;
+          }
+          .content {
+            p {
+              margin-top: 20px;
+              font-weight: 300;
+              line-height: 26px;
+            }
           }
         }
       }
     }
   }
 
+  .time-optimization {
+    background: #474747;
+    .section-content {
+
+    }
+  }
+
   .testimonials-section {
     .section-content {
       max-width: 1500px;
-      h2 {
-        text-align: center;
+      .headers {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         margin-bottom: 80px;
+        //h2 {
+        //  text-align: center;
+        //}
+        a {
+          margin-top: 10px;
+        }
       }
     }
   }
@@ -180,6 +222,27 @@
     background: #0e080d;
     .section-content {
 
+    }
+  }
+}
+
+@media screen and (max-width: 1550px) {
+  .home-page {
+    .testimonials-section {
+      .section-content {
+        width: 90%;
+      }
+    }
+
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .home-page {
+    .solutions-section {
+      .section-content {
+        width: 90%;
+      }
     }
   }
 }

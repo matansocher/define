@@ -21,7 +21,7 @@ export const Header = ({}: Props) => {
   const items: HeaderItem[] = [
     // { key: 1, label: 'Use Cases', link: 'use-cases' },
     // { key: 2, label: 'Projects', link: 'projects' },
-    { key: 3, label: 'Testimonials', link: 'what-people-say' },
+    { key: 3, label: 'Testimonials', link: 'testimonials' },
   ];
 
   return (

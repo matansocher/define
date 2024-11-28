@@ -54,20 +54,20 @@ export const homeConfig: HomeConfig = {
     {
       image: assets.homeSolutions1,
       title: 'Product Design & Research',
-      text: 'Details on how to improve processes and use research to save money',
-      additionalHeaderStyle: { maxWidth: '250px' },
+      text: 'Evidence-based approach combining deep user insights with strategic design thinking to create solutions that resonate with your target audience',
+      additionalHeaderStyle: { maxWidth: '200px' },
       additionalTextStyle: {},
     },
     {
       image: assets.homeSolutions2,
       title: '1:1 Guidance',
-      text: 'Details on how to improve processes and use research to save money',
+      text: 'Get personalized mentorship and expert actionable recommendations to accelerate your success',
       additionalHeaderStyle: { maxWidth: '150px' },
     },
     {
       image: assets.homeSolutions3,
       title: 'Design Sprint Workshops',
-      text: 'Details on how to improve processes and use research to save money',
+      text: 'Bring your team together to rapidly prototype and validate solutions, turning months of work into days of focused, collaborative problem-solving',
     },
   ],
   services: [

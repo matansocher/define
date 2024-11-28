@@ -42,15 +42,34 @@
         flex-direction: column;
         align-items: center;
         gap: 12px;
-        .additional-text-on-bottom {
+        .additional-text-on-bottom, .additional-text-top-left, .additional-text-top-right {
           position: absolute;
+          p {
+            color: #de82ff;
+            font-family: 'Caveat', sans-serif;
+            font-size: 23px;
+          }
+        }
+        .additional-text-on-bottom {
           bottom: -30px;
           left: 50%;
           transform: translateX(-50%);
           width: 250px;
-          color: #de82ff;
-          font-family: 'Caveat', sans-serif;
-          font-size: 23px;
+          p {
+
+          }
+        }
+        .additional-text-top-left {
+          top: -30px;
+          p {
+
+          }
+        }
+        .additional-text-top-right {
+          top: -30px;
+          p {
+
+          }
         }
         &-number {
           font-size: 38px;
@@ -63,7 +82,7 @@
           font-size: 18px;
           line-height: 26px;
           letter-spacing: 0.7px;
-          font-weight: 300;
+          font-weight: 400;
           text-align: center;
         }
       }
@@ -83,22 +102,30 @@
       align-items: center;
       flex-wrap: wrap;
       gap: 20px;
+      p {
+        font-size: 16px;
+        font-weight: 400;
+      }
     }
   }
 
   .react-multi-carousel-dot-list {
     gap: 4px;
+    bottom: -10px;
     .react-multi-carousel-dot {
-      background: #7c7c7c;
-      width: 7px !important;
-      height: 7px !important;
-      border-radius: 50%;
       button {
-        opacity: 0 !important;
+        background: #7c7c7c;
+        width: 7px !important;
+        height: 7px !important;
+        border-radius: 50%;
+        border: none;
+        margin-right: 0;
       }
     }
     .react-multi-carousel-dot--active {
-      background: #d9d9d9;
+      button {
+        background: #d9d9d9;
+      }
     }
   }
   .react-multiple-carousel__arrow {

@@ -1,8 +1,8 @@
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import './HomeProjects.scss';
-import { carouselConfig, projectsCarouselData } from './carousel-config';
 import { assets } from '@assets';
+import { carouselConfig, ProjectItem, projectsCarouselData } from './carousel-config';
+import './HomeProjects.scss';
 
 type Props = {}
 
@@ -34,20 +34,22 @@ export const HomeProjects = ({}: Props) => {
         slidesToSlide={1}
         swipeable
       >
-        {projectsCarouselData.map((project) => {
-          // const { title, numbers, image, additionalTextAboveNumbers, tags } = project;
+        {projectsCarouselData.map((project: ProjectItem) => {
           const { title, numbers, image, tags } = project;
+          // const { title, numbers, image, tags } = project;
           return (
             <div key={title} className="project-item">
               <p className="title">{title}</p>
               {/*{additionalTextAboveNumbers && <p className="additional-text-above-numbers">{additionalTextAboveNumbers}</p>}*/}
               {/*{additionalTextAboveNumbers && <img className="purple-arrow-to-right" src={assets.purpleArrowToEight} alt="arrow" />}*/}
               <div className="numbers">
-                {numbers.map(({ number, text, additionalTextOnBottom }) => (
+                {numbers.map(({ number, text, additionalTextOnBottom, additionalTextTopLeft, additionalTextTopRight }) => (
                   <div key={text} className="number-item">
                     <p className="number-item-number">{number}</p>
                     <p className="number-item-text">{text}</p>
-                    {additionalTextOnBottom && <p className="additional-text-on-bottom">{additionalTextOnBottom}</p>}
+                    {additionalTextOnBottom && <div className="additional-text-on-bottom"><p>{additionalTextOnBottom}</p></div>}
+                    {additionalTextTopLeft && <div className="additional-text-top-left"><p>{additionalTextTopLeft}</p></div>}
+                    {additionalTextTopRight && <div className="additional-text-top-right"><p>{additionalTextTopRight}</p></div>}
                   </div>
                 ))}
               </div>

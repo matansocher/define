@@ -77,7 +77,7 @@ export const carouselConfig: Record<string, CarouselConfig> = {
   },
 };
 
-interface ProjectItem {
+export interface ProjectItem {
   image: string;
   title: string;
   numbers: NumberItem[];

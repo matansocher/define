@@ -94,18 +94,10 @@ input, textarea {
 .section {
   width: 100%;
   padding: 100px 0;
-}
-
-.section-content {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.section-content-narrow {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
+  &-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }
 
 .main-btn {
@@ -129,5 +121,8 @@ input, textarea {
 @media screen and (max-width: 1100px) {
   .section {
     padding: 60px 0;
+    &-content {
+      width: 90%;
+    }
   }
 }
