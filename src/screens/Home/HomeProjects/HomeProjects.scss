@@ -47,29 +47,27 @@
           p {
             color: #de82ff;
             font-family: 'Caveat', sans-serif;
-            font-size: 23px;
+            font-size: 22px;
+            line-height: 28px;
+            text-align: left;
           }
         }
         .additional-text-on-bottom {
+          width: 120%;
           bottom: -30px;
           left: 50%;
           transform: translateX(-50%);
-          width: 250px;
           p {
-
+            text-align: center;
           }
         }
         .additional-text-top-left {
-          top: -30px;
-          p {
-
-          }
+          top: -60px;
+          left: -30px;
         }
         .additional-text-top-right {
-          top: -30px;
-          p {
-
-          }
+          top: -60px;
+          right: -30px;
         }
         &-number {
           font-size: 38px;
