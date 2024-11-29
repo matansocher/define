@@ -86,12 +86,14 @@ export const Home = ({}: Props) => {
         <div className="section-content">
           <h2>Our Services</h2>
           <div className="services-items">
-            {homeConfig.services.map((service, i) => (
+            {homeConfig.services.map(({ title, text, image, imageAlt, imageTopPosition }, i) => (
               <div className="services-item" key={i}>
-                <img src={service.image} alt=""/>
+                <div className="left">
+                  <img src={image} style={{ top: imageTopPosition }} alt={imageAlt} />
+                </div>
                 <div className="content">
-                  <h3>{service.title}</h3>
-                  <p>{service.text}</p>
+                  <h3>{title}</h3>
+                  <p>{text}</p>
                 </div>
               </div>
             ))}

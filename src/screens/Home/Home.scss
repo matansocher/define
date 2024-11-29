@@ -38,10 +38,11 @@
       .logos-track {
         display: flex;
         align-items: flex-end;
-        gap: 50px;
+        gap: 70px;
         animation: scroll 60s linear infinite;
         .logo {
-
+          width: auto;
+          height: 32px;
         }
       }
 
@@ -84,7 +85,8 @@
           font-size: 22px;
           font-weight: 300;
           line-height: 26px;
-          color: #9a9a9e;
+          letter-spacing: 0.05rem;
+          color: #bebec1;
         }
       }
     }
@@ -173,14 +175,19 @@
         .services-item {
           display: flex;
           align-items: flex-start;
-          gap: 20px;
-          img {
+          gap: 36px;
+          .left {
+            position: relative;
             width: 32px;
-            height: auto;
+            img {
+              position: absolute;
+              width: 32px;
+              height: auto;
+            }
           }
           .content {
             p {
-              margin-top: 20px;
+              margin-top: 12px;
               font-weight: 400;
               line-height: 26px;
             }
@@ -199,7 +206,7 @@
 
   .testimonials-section {
     .section-content {
-      max-width: 1500px;
+      width: 1500px;
       .headers {
         display: flex;
         flex-direction: column;
@@ -248,8 +255,10 @@
   .home-page {
     .services-section {
       .section-content {
-        width: 80%;
-        padding: 50px 0;
+        width: 90%;
+        .services-items {
+          padding-left: 75px;
+        }
         h2 {
           left: 12px !important;
         }
@@ -304,6 +313,18 @@
         .solutions-items {
           flex-direction: column;
           gap: 50px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .home-page {
+    .services-section {
+      .section-content {
+        .services-items {
+          padding-left: 50px;
         }
       }
     }

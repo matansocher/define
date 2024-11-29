@@ -18,6 +18,8 @@ interface SolutionItem {
 
 interface ServiceItem {
   image: string;
+  imageAlt: string;
+  imageTopPosition: string;
   title: string;
   text: string;
 }
@@ -73,46 +75,56 @@ export const homeConfig: HomeConfig = {
   services: [
     {
       image: assets.peopleIconBlack,
+      imageAlt: 'people',
+      imageTopPosition: '1px',
       title: 'Product Design Workshops',
       text: 'Structured workshops to accelerate feature ideation, testing, and development while aligning key stakeholders from Product, Design, and other departments to streamline requirements and drive collaboration.',
     },
     {
       image: assets.speedLimitBlack,
+      imageAlt: 'speed limit',
+      imageTopPosition: '0',
       title: 'UX Process Optimization',
       text: 'Assessing and refining UX workflows to reduce time-to-market, improve efficiency, and foster better cross-functional alignment.',
     },
     {
       image: assets.lightBulbBlack,
+      imageAlt: 'light bulb',
+      imageTopPosition: '2px',
       title: 'UX Expert for Complex Systems',
       text: 'Expertise in designing complex systems and user flows, ensuring intuitive navigation and optimized user experiences for multifaceted products.',
     },
     {
       image: assets.checkMarkBlack,
+      imageAlt: 'check mark',
+      imageTopPosition: '4px',
       title: 'User Research & Testing',
       text: 'Conducting and analyzing user research to validate concepts, inform product decisions, and ensure that design choices are data-driven and user-centric.',
     },
     {
       image: assets.arrowRightBlack,
+      imageAlt: 'arrow right',
+      imageTopPosition: '5px',
       title: 'Product and UX Strategy Alignment',
       text: 'Defining and aligning UX deliverable with product goals to ensure that design decisions support business KPIs and enhance user satisfaction.',
     },
   ],
   partnersLogos: [
-    { image: assets.amdocs, alt: 'amdocs logo' },
-    { image: assets.beacon, alt: 'beacon logo' },
-    { image: assets.brinkslogo, alt: 'brinkslogo logo' },
-    { image: assets.controlup, alt: 'controlup logo' },
-    { image: assets.gool, alt: 'gool logo' },
-    { image: assets.hippoCampus, alt: 'hippoCampus logo' },
-    { image: assets.lobby, alt: 'lobby logo' },
-    { image: assets.marketer, alt: 'marketer logo' },
-    { image: assets.myco, alt: 'myco logo' },
-    { image: assets.sheCodes, alt: 'sheCodes logo' },
-    { image: assets.sqlink, alt: 'sqlink logo' },
-    { image: assets.teamStefansky, alt: 'teamStefansky logo' },
-    { image: assets.teva, alt: 'teva logo' },
-    { image: assets.tlvMuni, alt: 'tlvMuni logo' },
-    { image: assets.trustech, alt: 'trustech logo' },
-    { image: assets.userFlowzzz, alt: 'userFlowzzz logo' },
+    { image: assets.amdocsBlack, alt: 'amdocs logo' },
+    { image: assets.tlvMuniBlack, alt: 'tlvMuni logo' },
+    { image: assets.controlupBlack, alt: 'controlup logo' },
+    { image: assets.sqlinkBlack, alt: 'sqlink logo' },
+    { image: assets.brinkslogoBlack, alt: 'brinkslogo logo' },
+    { image: assets.tevaBlack, alt: 'teva logo' },
+    { image: assets.trustechBlack, alt: 'trustech logo' },
+    { image: assets.hippoCampusBlack, alt: 'hippoCampus logo' },
+    { image: assets.mycoBlack, alt: 'myco logo' },
+    { image: assets.beaconBlack, alt: 'beacon logo' },
+    { image: assets.teamStefanskyBlack, alt: 'teamStefansky logo' },
+    { image: assets.marketerBlack, alt: 'marketer logo' },
+    { image: assets.sheCodesBlack, alt: 'sheCodes logo' },
+    { image: assets.goolBlack, alt: 'gool logo' },
+    { image: assets.userFlowzzzBlack, alt: 'userFlowzzz logo' },
+    { image: assets.lobbyBlack, alt: 'lobby logo' },
   ],
 }

@@ -13,9 +13,10 @@
   }
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1000px) {
   .testimonials-page {
     .testimonials-wrapper {
+      display: flex;
       flex-direction: column;
     }
   }

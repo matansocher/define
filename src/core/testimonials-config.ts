@@ -24,7 +24,7 @@ export const TESTIMONIALS_CONFIG: ITestimonial[] = [
     name: 'Tal Soffer',
     title: 'Founder',
     logo: assets.sofferWhite,
-    text: 'I had the pleasure of working with Dekel as a designer and UX specialist, and she really knows how to get the job done right. Beyond her impressive design skills, she brings strategic thinking and a sharp understanding of exactly what the user needs, executing it with precision and professionalism. You can rely on her to strike the perfect balance between creativity and practicality.',
+    text: 'I had the pleasure of working with Dekel as a designer and UX specialist, and she really knows how to get the job done right. Beyond her impressive design skills, she brings strategic thinking and a sharp understanding of exactly what the user needs, executing it with precision and professionalism. You can rely on her to strike the perfect balance between creativity and practicality',
   },
   {
     name: 'Doron Breuer',
@@ -41,7 +41,7 @@ export const TESTIMONIALS_CONFIG: ITestimonial[] = [
   {
     name: 'Amir Birnhack',
     title: 'Digital Consultant & System Admin',
-    text: 'Working with Dekel on projects was an outstanding experience. Her quick, thorough approach consistently ensured that our implementation projects were both successful and enjoyable. Dekel brought a high level of professionalism, effective communication, and a genuine spirit of collaboration to each project. Trust was the foundation of our work together, and she quickly became a reliable partner whom I could count on to meet our goals efficiently. Her friendly and dedicated approach made our collaboration both highly effective and personally rewarding, and I look forward to any future projects together״',
+    text: 'Working with Dekel on projects was an outstanding experience. Her quick, thorough approach consistently ensured that our implementation projects were both successful and enjoyable. Dekel brought a high level of professionalism, effective communication, and a genuine spirit of collaboration to each project. Trust was the foundation of our work together, and she quickly became a reliable partner whom I could count on to meet our goals efficiently. Her friendly and dedicated approach made our collaboration both highly effective and personally rewarding, and I look forward to any future projects together',
   },
   {
     name: 'Ira Pavlova',
@@ -53,7 +53,7 @@ export const TESTIMONIALS_CONFIG: ITestimonial[] = [
     name: 'Netta Danziger',
     title: 'Senior Product Manager',
     logo: assets.beaconWhite,
-    text: 'Working with Dekel from the early stages of our digital product was both enjoyable and highly productive. Together, we developed an MVP, built out key features, and crafted user flows that translated complex needs into intuitive solutions. Dekel’s UX expertise was invaluable—she consistently delivered seamless, well-thought-out solutions across mobile and desktop, and her close collaboration with our development team ensured smooth implementation. Her dedication and creativity were key to the success of our product, and her positive, professional attitude made every step of the process a pleasure.',
+    text: 'Working with Dekel from the early stages of our digital product was both enjoyable and highly productive. Together, we developed an MVP, built out key features, and crafted user flows that translated complex needs into intuitive solutions. Dekel’s UX expertise was invaluable—she consistently delivered seamless, well-thought-out solutions across mobile and desktop, and her close collaboration with our development team ensured smooth implementation. Her dedication and creativity were key to the success of our product, and her positive, professional attitude made every step of the process a pleasure',
   },
   {
     name: 'Galit Shatner',
