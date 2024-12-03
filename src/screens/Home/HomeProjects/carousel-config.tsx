@@ -95,7 +95,7 @@ export const projectsCarouselData: ProjectItem[] = [
     title: 'Engineering Permits Division',
     additionalTextBaseClass: 'engineering-permits-division-additional-text',
     numbers: [
-      { number: '9', text: 'Consolidated controls into one unified interface', mobileText: 'Controls Unified', additionalTextTopLeft: 'Moved less-used controls to single menu', },
+      { number: '9', text: 'Consolidated controls into one unified interface', mobileText: 'Controls Unified', additionalTextTopLeft: 'Moved less-used controls to a single menu', },
       { number: '20%', text: 'Reduced screen space used by controls', mobileText: 'Reduced screen space' },
       { number: '1', text: 'Cleaner & Better User Interface', additionalTextTopRight: 'Improved functionality with cleaner layout' },
       { number: '13', text: 'Improved interactive features' },
