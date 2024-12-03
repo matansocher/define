@@ -14,14 +14,14 @@
       width: 100%;
       background: #292929;
       border: 1px solid #dee4ea;
-      font-size: 16px;
+      font-size: 20px;
       font-weight: 500;
       box-sizing: border-box;
-      padding: 0 8px;
+      padding: 27px 8px;
     }
     .error-message, .success-message {
       position: absolute;
-      bottom: -20px;
+      bottom: -22px;
       font-size: 14px;
     }
     .success-message {
@@ -33,7 +33,7 @@
   }
   .main-btn {
     margin-top: 40px;
-    padding: 16px 75px;
+    padding: 16px;
     width: 250px;
   }
   .ant-spin-dot {
@@ -41,6 +41,22 @@
   }
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1100px) {
+  .contact-form {
+    h3 {
+      font-weight: 700 !important;
+      font-size: 32px !important;
+    }
+  }
+}
 
+@media screen and (max-width: 600px) {
+  .contact-form {
+    .form-element {
+      margin-top: 40px;
+    }
+    .main-btn {
+      //padding: 6px;
+    }
+  }
 }

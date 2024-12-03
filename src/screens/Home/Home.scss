@@ -95,6 +95,9 @@
   .solutions-section {
     background: #202020;
     .section-content {
+      h2 {
+        text-align: center;
+      }
       .solutions-items {
         display: flex;
         justify-content: space-between;
@@ -213,9 +216,6 @@
         flex-direction: column;
         align-items: center;
         margin-bottom: 80px;
-        //h2 {
-        //  text-align: center;
-        //}
         a {
           margin-top: 10px;
         }
@@ -286,6 +286,7 @@
     .solutions-section {
       .section-content {
         .solutions-items {
+
           flex-direction: column;
           align-items: center;
           gap: 70px;
@@ -331,6 +332,21 @@
       .section-content {
         .services-items {
           margin-top: 40px;
+        }
+      }
+    }
+    .solutions-section {
+      .section-content {
+        .solutions-items {
+          margin-top: 50px !important;
+          gap: 75px;
+        }
+      }
+    }
+    .testimonials-section {
+      .section-content {
+        .headers {
+          margin-bottom: 50px;
         }
       }
     }

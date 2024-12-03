@@ -1,12 +1,15 @@
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { assets } from '@assets';
+import { useIsMobile } from '@hooks';
 import { carouselConfig, ProjectItem, projectsCarouselData } from './carousel-config';
 import './HomeProjects.scss';
 
 type Props = {}
 
 export const HomeProjects = ({}: Props) => {
+  const isMobile = useIsMobile(800);
+
   return (
     <div className="home-projects">
       <Carousel
@@ -40,25 +43,27 @@ export const HomeProjects = ({}: Props) => {
             <div key={title} className="project-item">
               <p className="title">{title}</p>
               <div className="numbers">
-                {numbers.map(({ number, text, additionalTextOnBottom, additionalTextTopLeft, additionalTextTopRight }, index) => (
+                {numbers.map(({ number, text, mobileText, additionalTextOnBottom, additionalTextTopLeft, additionalTextTopRight }, index) => (
                 // {numbers.map(({ number, text }) => (
                   <div key={text} className="number-item">
-                    <p className="number-item-number">{number}</p>
-                    <p className="number-item-text">{text}</p>
-                    {additionalTextOnBottom && <div className={`additional-text additional-text-on-bottom ${additionalTextBaseClass}-${index+1}`}>
-                      <p>{additionalTextOnBottom}</p>
-                    </div>}
                     {additionalTextTopLeft && <div className={`additional-text additional-text-top-left ${additionalTextBaseClass}-${index+1}`}>
-                      <p>{additionalTextTopLeft}</p>
-                        {/*<div className="purple-arrow">*/}
-                        {/*  <img src={assets.curvedPurpleArrow} alt="arrow" />*/}
-                        {/*</div>*/}
+                        <p>{additionalTextTopLeft}</p>
+                      {/*<div className="purple-arrow">*/}
+                      {/*  <img src={assets.curvedPurpleArrow} alt="arrow" />*/}
+                      {/*</div>*/}
                     </div>}
                     {additionalTextTopRight && <div className={`additional-text additional-text-top-right ${additionalTextBaseClass}-${index+1}`}>
-                      <p>{additionalTextTopRight}</p>
-                        {/*<div className="purple-arrow inverted-arrow">*/}
-                        {/*  <img src={assets.curvedPurpleArrow} alt="arrow" />*/}
-                        {/*</div>*/}
+                        <p>{additionalTextTopRight}</p>
+                      {/*<div className="purple-arrow inverted-arrow">*/}
+                      {/*  <img src={assets.curvedPurpleArrow} alt="arrow" />*/}
+                      {/*</div>*/}
+                    </div>}
+                    <div className="number-item-content">
+                      <p className="number-item-content-number">{number}</p>
+                      <p className="number-item-content-text">{isMobile ? (mobileText || text) : text}</p>
+                    </div>
+                    {additionalTextOnBottom && <div className={`additional-text additional-text-on-bottom ${additionalTextBaseClass}-${index+1}`}>
+                      <p>{additionalTextOnBottom}</p>
                     </div>}
                   </div>
                 ))}
