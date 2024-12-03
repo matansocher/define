@@ -69,7 +69,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 200px;
+      gap: 100px;
       .number-item {
         display: flex;
         align-items: center;
@@ -142,6 +142,7 @@
     background: #303030;
     .section-content {
       max-width: 1200px;
+      width: 90%;
       h2 {
         text-align: center;
         margin-bottom: 40px;
@@ -257,10 +258,28 @@
       .section-content {
         width: 90%;
         .services-items {
-          padding-left: 75px;
+          max-width: unset;
+          padding-left: 0;
+          margin-top: 60px;
         }
         h2 {
-          left: 12px !important;
+          position: unset;
+          writing-mode: unset;
+          transform: unset;
+          //left: 12px !important;
+        }
+      }
+    }
+    .numbers-section {
+      .section-content {
+        flex-direction: column;
+        gap: 40px;
+        .number-item {
+          flex-direction: column;
+          .text {
+            max-width: unset;
+            text-align: center;
+          }
         }
       }
     }
@@ -295,19 +314,6 @@
         //}
       }
     }
-    .numbers-section {
-      .section-content {
-        flex-direction: column;
-        gap: 40px;
-        .number-item {
-          flex-direction: column;
-          .text {
-            max-width: unset;
-            text-align: center;
-          }
-        }
-      }
-    }
     .solutions-section {
       .section-content {
         .solutions-items {
@@ -324,7 +330,7 @@
     .services-section {
       .section-content {
         .services-items {
-          padding-left: 50px;
+          margin-top: 40px;
         }
       }
     }

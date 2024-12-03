@@ -52,7 +52,7 @@ const sharedAssetsPath = 'shared';
 const sharedAssets = {
   chvronLeft: `${sharedAssetsPath}/chevron-left.png` ,
   chvronRight: `${sharedAssetsPath}/chevron-right.png` ,
-  purpleArrowToEight: `${sharedAssetsPath}/purple-arrow-to-right.png` ,
+  curvedPurpleArrow: `${sharedAssetsPath}/curved-purple-arrow.png` ,
 } as const;
 
 export const assetsConfig = {

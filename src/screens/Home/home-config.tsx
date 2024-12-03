@@ -3,9 +3,6 @@ import { assets } from '@assets';
 export interface NumberItem {
   number: string;
   text: string;
-  additionalTextOnBottom?: string;
-  additionalTextTopLeft?: string;
-  additionalTextTopRight?: string;
 }
 
 interface SolutionItem {

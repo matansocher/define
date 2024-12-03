@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
-import ContentCopyIcon from '@mui/icons-material/ContentCopy';
-import DoneIcon from '@mui/icons-material/Done';
+import { ContentCopy as ContentCopyIcon } from '@mui/icons-material';
 import './Footer.scss';
 
 type Props = {
@@ -9,7 +8,7 @@ type Props = {
 }
 
 export const Footer = ({}: Props) => {
-  const [showCopied, setShowCopied] = useState(false);
+  const [showCopied, setShowCopied] = useState<boolean>(false);
 
   useEffect(() => {
     const timeOutId = setTimeout(() => {
@@ -26,8 +25,8 @@ export const Footer = ({}: Props) => {
       <div className="footer-right">
         <CopyToClipboard text="define.expert@gmail.com" onCopy={() => {setShowCopied(true)}}>
           <div className="link">
-            <DoneIcon style={{ opacity: showCopied ? 1 : 0 }} />
-            <ContentCopyIcon style={{ opacity: !showCopied ? 1 : 0 }} />
+            <div className="copied" style={{opacity: showCopied ? 1 : 0}}><p>Copied!</p></div>
+            <ContentCopyIcon/>
             <p>define.expert@gmail.com</p>
           </div>
         </CopyToClipboard>

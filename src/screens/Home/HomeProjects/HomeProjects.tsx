@@ -35,30 +35,38 @@ export const HomeProjects = ({}: Props) => {
         swipeable
       >
         {projectsCarouselData.map((project: ProjectItem) => {
-          const { title, numbers, image, tags } = project;
-          // const { title, numbers, image, tags } = project;
+          const { title, additionalTextBaseClass, numbers, image, tags } = project;
           return (
             <div key={title} className="project-item">
               <p className="title">{title}</p>
-              {/*{additionalTextAboveNumbers && <p className="additional-text-above-numbers">{additionalTextAboveNumbers}</p>}*/}
-              {/*{additionalTextAboveNumbers && <img className="purple-arrow-to-right" src={assets.purpleArrowToEight} alt="arrow" />}*/}
               <div className="numbers">
-                {numbers.map(({ number, text, additionalTextOnBottom, additionalTextTopLeft, additionalTextTopRight }) => (
+                {numbers.map(({ number, text, additionalTextOnBottom, additionalTextTopLeft, additionalTextTopRight }, index) => (
+                // {numbers.map(({ number, text }) => (
                   <div key={text} className="number-item">
                     <p className="number-item-number">{number}</p>
                     <p className="number-item-text">{text}</p>
-                    {additionalTextOnBottom && <div className="additional-text-on-bottom"><p>{additionalTextOnBottom}</p></div>}
-                    {additionalTextTopLeft && <div className="additional-text-top-left"><p>{additionalTextTopLeft}</p></div>}
-                    {additionalTextTopRight && <div className="additional-text-top-right"><p>{additionalTextTopRight}</p></div>}
+                    {additionalTextOnBottom && <div className={`additional-text additional-text-on-bottom ${additionalTextBaseClass}-${index+1}`}>
+                      <p>{additionalTextOnBottom}</p>
+                    </div>}
+                    {additionalTextTopLeft && <div className={`additional-text additional-text-top-left ${additionalTextBaseClass}-${index+1}`}>
+                      <p>{additionalTextTopLeft}</p>
+                        {/*<div className="purple-arrow">*/}
+                        {/*  <img src={assets.curvedPurpleArrow} alt="arrow" />*/}
+                        {/*</div>*/}
+                    </div>}
+                    {additionalTextTopRight && <div className={`additional-text additional-text-top-right ${additionalTextBaseClass}-${index+1}`}>
+                      <p>{additionalTextTopRight}</p>
+                        {/*<div className="purple-arrow inverted-arrow">*/}
+                        {/*  <img src={assets.curvedPurpleArrow} alt="arrow" />*/}
+                        {/*</div>*/}
+                    </div>}
                   </div>
                 ))}
               </div>
               <div className="image" style={{ backgroundImage: `url(${image})` }} />
 
               <div className="tags">
-                {tags.map((tag) => (
-                  <p key={tag}>{tag}</p>
-                ))}
+                {tags.map((tag) => <p key={tag}>{tag}</p>)}
               </div>
             </div>
           );

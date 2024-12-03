@@ -1,5 +1,12 @@
 import { assets } from '@assets';
-import { NumberItem } from '../home-config';
+
+export interface NumberItem {
+  number: string;
+  text: string;
+  additionalTextOnBottom?: string;
+  additionalTextTopLeft?: string;
+  additionalTextTopRight?: string;
+}
 
 interface PlatformInfo {
   breakpoint: {
@@ -80,6 +87,7 @@ export const carouselConfig: Record<string, CarouselConfig> = {
 export interface ProjectItem {
   image: string;
   title: string;
+  additionalTextBaseClass: string;
   numbers: NumberItem[];
   tags: string[];
 }
@@ -87,6 +95,7 @@ export interface ProjectItem {
 export const projectsCarouselData: ProjectItem[] = [
   {
     title: 'Salary Additions System',
+    additionalTextBaseClass: 'salary-additions-additional-text',
     numbers: [
       { number: '2', text: 'People saved in project', additionalTextTopLeft: '*estimation based on the costs of staff usually needed' },
       { number: '98.5%', text: 'Calculations were successfully automated' },
@@ -98,6 +107,7 @@ export const projectsCarouselData: ProjectItem[] = [
   },
   {
     title: 'New Employee Onboarding',
+    additionalTextBaseClass: 'employee-onboarding-additional-text',
     numbers: [
       { number: '4', text: 'Months Duration', additionalTextTopLeft: '*estimation based on the costs of staff usually needed' },
       { number: '100%', text: 'Accessibility Compliance' },
@@ -109,17 +119,20 @@ export const projectsCarouselData: ProjectItem[] = [
   },
   {
     title: 'Marketer',
+    additionalTextBaseClass: 'marketer-additional-text',
     numbers: [
       { number: '1', text: 'First & Single Designer (Startrup)' },
       { number: '100%', text: 'Reusable Components', additionalTextOnBottom: '(Design System)' },
       { number: '100%', text: 'Accessibility Compliance', additionalTextOnBottom: '66.67% reduction in time' },
-      { number: '1', text: 'Scalable Brand Language', additionalTextTopRight: 'Cutting costs and enabling quicker, aligned designs & website' },
+      { number: '1', text: 'Scalable Brand Language' },
+      // { number: '1', text: 'Scalable Brand Language', additionalTextTopRight: 'Cutting costs and enabling quicker, aligned designs & website' }, // %$$$%%%%%%%%%%%%%%%$$$$$$$$$$$$$$$$$$$$$$$$$$
     ],
     image: assets.homeProjectMarketer,
     tags: ['#UI', '#Research', '#Design System'],
   },
   {
     title: 'Digital Employee Homepage',
+    additionalTextBaseClass: 'digital-employee-additional-text',
     numbers: [
       { number: '2', text: 'People saved in project', additionalTextTopLeft: '*estimation based on the costs of staff usually needed', },
       { number: '98.5%', text: 'Calculations were successfully automated' },
@@ -131,6 +144,7 @@ export const projectsCarouselData: ProjectItem[] = [
   },
   {
     title: 'MYCO',
+    additionalTextBaseClass: 'myco-additional-text',
     numbers: [
       { number: '6', text: 'Months Duration' },
       { number: '30%', text: 'Reduced Purchase Time', additionalTextTopLeft: 'Decrease friction by removing unnecessary fields on form' },
@@ -142,6 +156,7 @@ export const projectsCarouselData: ProjectItem[] = [
   },
   {
     title: 'Beacon',
+    additionalTextBaseClass: 'beacon-additional-text',
     numbers: [
       { number: '2', text: 'People saved in project', additionalTextTopLeft: '*estimation based on the costs of staff usually needed' },
       { number: '98.5%', text: 'Calculations were successfully automated' },
@@ -152,7 +167,8 @@ export const projectsCarouselData: ProjectItem[] = [
     tags: ['#UXUI', '#Product', '#Research', '#QA'],
   },
   {
-    title: 'Engineering Permits division',
+    title: 'Engineering Permits Division',
+    additionalTextBaseClass: 'engineering-permits-division-additional-text',
     numbers: [
       { number: '9', text: 'Consolidated controls into one unified interface', additionalTextTopLeft: 'Moved less-used controls to single menu', },
       { number: '20%', text: 'Reduced screen space used by controls ' },
@@ -164,6 +180,7 @@ export const projectsCarouselData: ProjectItem[] = [
   },
   {
     title: 'Automated reports',
+    additionalTextBaseClass: 'automated-reports-additional-text',
     numbers: [
       { number: '20.3%', text: 'Quarterly Cumulative Growth in Completions', additionalTextTopLeft: 'Total increase in successful exports (Business metric)!' },
       { number: '2m 54s', text: 'Median time to convert' },
@@ -173,15 +190,16 @@ export const projectsCarouselData: ProjectItem[] = [
     image: assets.homeProjectAutomatedReports,
     tags: ['#UXUI', '#Product', '#Research', '#QA'],
   },
-  {
-    title: 'App DX',
-    numbers: [
-      { number: '2', text: 'People saved in project', additionalTextTopLeft: '*estimation based on the costs of staff usually needed' },
-      { number: '98.5%', text: 'Calculations were successfully automated' },
-      { number: '95%', text: 'Automations approved by 10th of month', additionalTextOnBottom: '66.67% reduction in time' },
-      { number: '12', text: 'Months duration' },
-    ],
-    image: assets.homeProjectAppDx,
-    tags: ['#UXUI', '#Product', '#Research', '#QA'],
-  },
+  // {
+  //   title: 'App DX',
+  //   additionalTextBaseClass: 'app-dx-additional-text',
+  //   numbers: [
+  //     { number: '2', text: 'People saved in project', additionalTextTopLeft: '*estimation based on the costs of staff usually needed' },
+  //     { number: '98.5%', text: 'Calculations were successfully automated' },
+  //     { number: '95%', text: 'Automations approved by 10th of month', additionalTextOnBottom: '66.67% reduction in time' },
+  //     { number: '12', text: 'Months duration' },
+  //   ],
+  //   image: assets.homeProjectAppDx,
+  //   tags: ['#UXUI', '#Product', '#Research', '#QA'],
+  // },
 ];

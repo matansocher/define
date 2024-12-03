@@ -4,7 +4,7 @@ import './ScrollSpy.scss';
 type Props = {}
 
 export const ScrollSpy = ({}: Props) => {
-  const [scrollProgress, setScrollProgress] = useState(0);
+  const [scrollProgress, setScrollProgress] = useState<number>(0);
 
   const updateScrollProgress = () => {
     const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
