@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import 'react-multi-carousel/lib/styles.css';
 import './HomeTimeOptimization.scss';
 
@@ -7,30 +7,6 @@ type Props = {}
 export const HomeTimeOptimization = ({}: Props) => {
   const [isReadMoreOpen, setIsReadMoreOpen] = useState<boolean>(false);
   const contentRef = useRef<HTMLDivElement | null>(null);
-  const barRef1 = useRef(null);
-  const barRef2 = useRef(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('animate');
-        }
-      });
-    }, {
-      threshold: 0.5 // 50% of the bar is visible to trigger the animation
-    });
-
-    if (barRef1.current) {
-      observer.observe(barRef1.current);
-    }
-
-    if (barRef2.current) {
-      observer.observe(barRef2.current);
-    }
-
-    return () => observer.disconnect(); // Cleanup on component unmount
-  }, []);
 
   const toggleReadMore = () => {
     const content = contentRef.current;
@@ -67,14 +43,14 @@ export const HomeTimeOptimization = ({}: Props) => {
           <p className="right">7.5h</p>
         </div>
         <div className="graph">
-          <div className="bar" ref={barRef1}  style={{ '--bar-percentage': '100%' }}></div>
+          <div className="bar" style={{width: '100%'}}></div>
         </div>
         <div className="top">
-          <p className="left">Optimized Design Sprint Workshop</p>
+        <p className="left">Optimized Design Sprint Workshop</p>
           <p className="right">4.5h</p>
         </div>
         <div className="graph">
-          <div className="bar" ref={barRef2}  style={{ '--bar-percentage': '60%' }}></div>
+          <div className="bar" style={{width: '60%'}}></div>
         </div>
       </div>
 

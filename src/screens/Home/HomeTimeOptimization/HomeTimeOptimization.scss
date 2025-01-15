@@ -63,10 +63,6 @@
         background: linear-gradient(-90deg, #de82ff 0%, #854e99 100%);
         height: 100%;
         border-radius: 8px;
-        transition: width 2s ease-in-out;
-      }
-      .bar.animate {
-        width: var(--bar-percentage, 100%); /* Custom property for dynamic percentage */
       }
     }
   }
