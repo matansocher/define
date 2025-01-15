@@ -45,7 +45,6 @@ const partnersLogos = {
   tlvMuniColored: `${partnersLogosPath}/tlv-muni-colored.png`,
   trustechBlack: `${partnersLogosPath}/trustech-black.png`,
   trustechWhite: `${partnersLogosPath}/trustech-white.png`,
-  userFlowzzzBlack: `${partnersLogosPath}/user-flowzzz-black.png`,
 };
 
 const sharedAssetsPath = 'shared';

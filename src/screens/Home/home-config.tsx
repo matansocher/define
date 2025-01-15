@@ -121,7 +121,6 @@ export const homeConfig: HomeConfig = {
     { image: assets.marketerBlack, alt: 'marketer logo' },
     { image: assets.sheCodesBlack, alt: 'sheCodes logo' },
     { image: assets.goolBlack, alt: 'gool logo' },
-    { image: assets.userFlowzzzBlack, alt: 'userFlowzzz logo' },
     { image: assets.lobbyBlack, alt: 'lobby logo' },
   ],
 }
